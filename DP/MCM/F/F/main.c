@@ -90,6 +90,7 @@ int mcm_TF(char *str, bool isTrue, int i, int j)
             }
         }
         
+        
         if(str[k] == '^'){
             if(isTrue)
             {
