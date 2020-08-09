@@ -8,10 +8,17 @@
 
 #include <iostream>
 #include "string"
+#include <map>
+#include <iterator>
+
 using namespace std;
 
+map<pair<string,string>, bool> store;
 bool ss(string a, string b)
 {
+    pair<string, string> pt = make_pair(a,b);
+    if(store.find(pt) != store.end())
+        return store[pt];
     if(a.compare(b) == 0)
     {
         return true;
@@ -26,20 +33,23 @@ bool ss(string a, string b)
     bool flag = false;
     
     for (int i = 1; i < n; i++) {
-        bool cond1 = ss(a.substr(0,i), b.substr(n-i,i)) && ss(a.substr(i,n-i), b.substr(0,n-i));
+        bool first = ss(a.substr(0,i), b.substr(n-i,i));
+        bool second = ss(a.substr(i,n-i), b.substr(0,n-i));
+        bool cond1 = first && second;
         
-        bool cond2 = ss(a.substr(0,i), b.substr(0,i)) && ss(a.substr(i,n-i), b.substr(i,n-i));
+        first = ss(a.substr(0,i), b.substr(0,i));
+        second = ss(a.substr(i,n-i), b.substr(i,n-i));
+        bool cond2 = first && second;;
         
         if(cond1 || cond2)
             return true;
     }
-    
     return flag;
 }
 
 int main(int argc, const char * argv[]) {
-    string str = "churamaam";
-    string tr = "aamchuram";
+    string str = "saksmhi";
+    string tr = "isakxsh";
     
     if(str.length() != tr.length())
         cout<<"Lenght Mismatch"<<endl;
