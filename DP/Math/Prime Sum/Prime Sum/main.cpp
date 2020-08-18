@@ -43,6 +43,7 @@ vector<int> solve(int A){
 }
 
 int main(int argc, const char * argv[]) {
-    solve(10);
+    //solve(10);
+    int a = 1993;
     return 0;
 }
