@@ -53,6 +53,7 @@ int solve(vector<int> &A) {
 
 int main(int argc, const char * argv[]) {
     vector<int> x = {-4,-2,0,-1,-6};
+    x.assign(5, 0);
     solve(x);
     return 0;
 }
