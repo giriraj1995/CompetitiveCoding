@@ -18,34 +18,34 @@ void swap(int *a, int *b){
 }
 
 vector<int> findPerm(const string A, int B) {
-    vector<int> x;
-    if(B == 0 || B<0)
-        return x;
-        
-    for(int i = 1; i <= B; i++){
-        x.push_back(i);
-    }
+    int large = B;
+    int small = 1;
     
-    for(int i = 1; i < B; i++){
-        if(A[i-1] == 'I'){
-            if(x[i] < x[i-1]){
-                swap(&x[i], &x[i-1]);
-            }
-        }else if(A[i-1] == 'D'){
-            if(x[i] > x[i-1]){
-                swap(&x[i], &x[i-1]);
-            }
+    vector<int> res;
+    
+    for (int i = 0; i < A.size(); i++) {
+        if(A[i] == 'I'){
+            res.push_back(small);
+            small++;
+        } else {
+            res.push_back(large);
+            large--;
         }
     }
     
-    return x;
+    if(A[A.size()-1] == 'I'){
+        res.push_back(small);
+    } else {
+        res.push_back(large);
+    }
     
+    return res;
 }
 
 
 int main(int argc, const char * argv[]) {
-    string a = "ID";
-    int b = 3;
+    string a = "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD";
+    int b = 354;
     
     findPerm(a,b);
     return 0;
