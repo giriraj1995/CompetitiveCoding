@@ -93,6 +93,6 @@ string addBinary(string A, string B) {
 
 
 int main(int argc, const char * argv[]) {
-    
+    string x = "h";
     return 0;
 }
