@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  Print 1 to N
+//  Factorial
 //
 //  Created by Giriraj Saigal on 29/08/20.
 //  Copyright © 2020 Giriraj Saigal. All rights reserved.
@@ -10,15 +10,18 @@
 #include <vector>
 using namespace std;
 
-void solve(int n){
-    if(n == 0)
-        return;
-    solve(n-1);
-    cout<<n<<endl;
-
+int fact(int n){
+    if(n == 1 || n == 0)
+        return n;
+    
+    if(n < 0)
+        return -1;
+    
+    return fact(n-1) * n;
 }
 
+
 int main(int argc, const char * argv[]) {
-    solve(50);
+    cout<<fact(6)<<endl;
     return 0;
 }
