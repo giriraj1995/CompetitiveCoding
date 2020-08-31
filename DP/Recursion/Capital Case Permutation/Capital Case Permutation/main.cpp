@@ -29,9 +29,14 @@ void solve(string i, string o){
 
 int main(int argc, const char * argv[]) {
     
-    string x = "abc";
+    string x;
+    cin>>x;
     
     solve(x, "");
     
+    x[0] = toupper(x[0]);
+    x[1] = tolower(x[1]);
+
+    cout<<x<<endl;
     return 0;
 }
