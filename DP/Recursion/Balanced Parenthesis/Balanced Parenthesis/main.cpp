@@ -48,8 +48,9 @@ bool isPresent(vector<string> x, string y){
     return false;
 }
 
-
-void solve(int open, int close, string out, int n){
+int calls = 0;
+void solve1(int open, int close, string out, int n){
+    calls++;
     
     if((open == 0 && close == 0) || out.size() == n){
         if(isBalanced(out)){
@@ -59,23 +60,43 @@ void solve(int open, int close, string out, int n){
         }
         return;
     } else if(open == 0){
-        solve(0, close-1, out + ")", n);
+        solve1(0, close-1, out + ")", n);
     } else if(close == 0)
-        solve(open-1,0, out + "(", n);
+        solve1(open-1,0, out + "(", n);
     
-    solve(open-1,close,out+"(", n);
-    solve(open,close-1,out+")", n);
+    solve1(open-1,close,out+"(", n);
+    solve1(open,close-1,out+")", n);
+}
+
+void solve2(int open, int close, string out, int n){
+    calls++;
+    if((open == 0 && close == 0) || out.size() == n){
+        A.push_back(out);
+        return;
+    }
+    
+    if(open == 0){
+        solve2(open, close-0, out + "}", n);
+    }else if(open <= close){
+        solve2(open-1, close, out + "{", n);
+        solve2(open, close-1, out + "}", n);
+    }
+    else
+        return;
+    
 }
 
 
 int main(int argc, const char * argv[]) {
     int n = 5;
-    solve(n,n,"", 10);
+    solve2(n,n,"", 10);
     
     for(string i:A){
         cout<<i<<endl;
     }
     cout<<"count:"<<A.size();
+    cout<<endl;
+    cout<<"calls:"<<calls;
     cout<<endl;
     return 0;
 }

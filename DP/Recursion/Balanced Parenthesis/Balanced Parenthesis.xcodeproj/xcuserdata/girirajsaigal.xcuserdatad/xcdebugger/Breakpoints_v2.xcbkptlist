@@ -14,8 +14,8 @@
             filePath = "Balanced Parenthesis/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>
@@ -30,9 +30,9 @@
             filePath = "Balanced Parenthesis/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "solve(open, close, out, n)"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "solve1(open, close, out, n)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
@@ -46,8 +46,8 @@
             filePath = "Balanced Parenthesis/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>
