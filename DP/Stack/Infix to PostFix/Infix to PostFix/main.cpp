@@ -10,6 +10,7 @@
 #include <vector>
 #include <string>
 #include <stack>
+#include <queue>
 using namespace std;
 
 int precedenceChart(char c){
@@ -100,7 +101,10 @@ int evaluate(string x){
 
 int main(int argc, const char * argv[]) {
     string x = "6+7*1-2";
-    x = InFixToPostFix(x);
-    cout<<evaluate(x)<<endl;
+    //x = InFixToPostFix(x);
+    //cout<<evaluate(x)<<endl;
+    string w = "giriraj";
+    cout<<w.substr(0, 7)<<endl;
+    queue<char> q;
     return 0;
 }
