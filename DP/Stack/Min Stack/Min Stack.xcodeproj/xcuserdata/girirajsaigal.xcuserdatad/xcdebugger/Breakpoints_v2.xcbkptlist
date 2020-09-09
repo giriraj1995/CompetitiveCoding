@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "6C80F87B-19B0-45F2-AFB9-4C471C172DAB"
+   uuid = "12DBEA0F-171B-439A-A24D-17DDF199B4AD"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "59185478-5372-4199-ABD2-BE0CA18F2C7A"
+            uuid = "FF18DBAA-0355-42D9-8305-71BF80B53D2F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Max area of rectangle in Binary Matrix/main.cpp"
+            filePath = "Min Stack/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "main(argc, argv)"
             landmarkType = "9">
          </BreakpointContent>

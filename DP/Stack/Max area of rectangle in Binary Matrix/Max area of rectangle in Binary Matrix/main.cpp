@@ -106,7 +106,6 @@ int main(int argc, const char * argv[]) {
         ans = max(ans, MAH(p));
     }
     
-    
     return 0;
 }
 
