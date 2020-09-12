@@ -51,7 +51,7 @@ vector<vector<int> > subsets(vector<int> &A) {
 
 int main(int argc, const char * argv[]) {
     
-    vector<int > x = {12, 13};
+    vector<int > x = {1,2,2};
     vector<vector<int> > y = subsets(x);
     return 0;
 }
