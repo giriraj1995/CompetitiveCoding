@@ -42,12 +42,11 @@ int maxPoints(vector<int> x, vector<int> y) {
         max_points = max(max_points,curr_max + same_points + 1);
         map.clear();
     }
-    
     return max_points;
-    
 }
 
 int main(int argc, const char * argv[]) {
     cout<<maxPoints({0,1,-1}, {0,1,-1})<<endl;
+
     return 0;
 }
