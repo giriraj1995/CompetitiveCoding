@@ -21,7 +21,7 @@ void findKClosestPoints(vector<int> x, vector<int> y, int k){
     int n = x.size();
     
     for(int i = 0; i < n; i++){
-        maxheap.push({sqrt(pow(x[i], 2) + pow(y[i], 2)), {x[i],y[i]}});
+        maxheap.push({pow(x[i], 2) + pow(y[i], 2), {x[i],y[i]}});
         if(maxheap.size() > k)
             maxheap.pop();
     }
