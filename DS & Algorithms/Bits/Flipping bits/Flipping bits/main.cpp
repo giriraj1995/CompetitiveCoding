@@ -24,6 +24,6 @@ long flippingBits(long n) {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    flippingBits(1);
+    cout<<flippingBits(1);
     return 0;
 }
