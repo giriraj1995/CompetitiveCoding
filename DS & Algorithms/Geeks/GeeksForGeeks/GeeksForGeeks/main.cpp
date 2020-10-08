@@ -79,8 +79,8 @@ int numberOfWays(int n, vector<vector<char>> &mat)
 }
 
 int main(int argc, const char * argv[]) {
-    vector<vector<char>> mat = {{'#', '#'},
-        {'#', '#'}};
-    cout<<numberOfWays(2, mat)<<endl;
+//    vector<vector<char>> mat = {{'#', '#'},
+//        {'#', '#'}};
+//    cout<<numberOfWays(2, mat)<<endl;
     return 0;
 }

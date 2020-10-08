@@ -15,7 +15,7 @@
 #include <queue>
 using namespace std;
 
-vector<int> order(vector<int> &heights, vector<int> &infronts)
+vector<int> order1(vector<int> &heights, vector<int> &infronts)
 {
     // Do not write main() function.
     // Do not read input, instead use the arguments to the function.
@@ -48,6 +48,28 @@ vector<int> order(vector<int> &heights, vector<int> &infronts)
     }
     
     return v;
+}
+
+bool cmp(pair<int,int>& a,pair<int,int>& b)
+{
+    if(a.first>b.first || (a.first == b.first && a.second<b.second))
+        return true;
+    return false;
+}
+vector<int> order(vector<int> &A, vector<int> &B)
+{
+    vector<pair<int,int>> arr;
+    
+    for(int i=0;i<A.size();i++)
+        arr.push_back({A[i],B[i]});
+        
+    sort(arr.begin(),arr.end(),cmp);
+    vector<int> ans;
+    
+    for(int i=0;i<arr.size();i++)
+        ans.insert(ans.begin()+arr[i].second,arr[i].first);
+        
+    return ans;
 }
 
 int main(int argc, const char * argv[]) {
