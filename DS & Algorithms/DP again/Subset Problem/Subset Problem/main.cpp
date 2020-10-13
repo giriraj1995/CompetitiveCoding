@@ -44,6 +44,28 @@ int solve(vector<int> &A, int B) {
 
 
 int main(int argc, const char * argv[]) {
-    
+
+        float a;
+        float b;
+
+        int x;
+        int y;
+
+        int t;
+        scanf("%d", &t);
+
+        while(t--){
+            
+            scanf("%d", &a);
+            scanf("%d", &b);
+            scanf("%f", &x);
+            scanf("%f", &y);
+
+            printf("%d ", x+y);
+            printf("%d\n", x-y);
+            printf("%f ", a+b);
+            printf("%f\n", a-b);
+        }
+        
     return 0;
 }
