@@ -6,7 +6,14 @@
 //  Copyright © 2020 Giriraj Saigal. All rights reserved.
 //
 
-
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <queue>
+using namespace std;
 
 vector<int> solve(vector<vector<int> > &A) {
     
