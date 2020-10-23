@@ -15,49 +15,34 @@
 #include <queue>
 using namespace std;
 
-#define M 1000000007
-#define ll long long
-int numDecodings(string A)
-{
-    int n = A.size();
-    ll dp[n] = {0};
+int numDecodings(string digits) {
     
-    if(A[0]!= '0')
-    dp[0] = 1;
-    for(int x=1; x<n; x++)
+    int n = digits.size();
+    long count[n+1];
+    
+    count[0] = 1;
+    count[1] = 1;
+    //for base condition "01123" should return 0
+    if(digits[0]=='0')
+         return 0;
+    for (int i = 2; i <= n; i++)
     {
-        if(A[x+1] == '0' and x<n-1)
-            continue;
-            
-        int p1 = A[x] - '0';
-        int p2 = A[x-1] - '0';
-        
-        if(A[x] != '0')
-        dp[x] = (dp[x]+dp[x-1])%M;
-        
-      
-            if(p1<=6 and p2 == 2)
-            {
-                if(x == 1)
-                dp[x]++;
-                
-                else
-                dp[x] = (dp[x] + dp[x-2])%M;
-            }
-            
-            else if(p2 == 1 and p1<=9)
-            {
-                if(x == 1)
-                dp[x]++;
-                
-                else
-                dp[x]  = (dp[x] + dp[x-2])%M;
-            }
-    
+        count[i] = 0;
+  
+        // If the last digit is not 0,
+        // then last digit must add to the number of words
+        if (digits[i-1] > '0')
+            count[i] = count[i-1];
+  
+        // If second last digit is smaller
+        // than 2 and last digit is smaller than 7,
+        // then last two digits form a valid character
+        if (digits[i-2] == '1' ||  (digits[i-2] == '2' && digits[i-1] < '7') )
+            count[i] += count[i-2];
     }
+
+    return count[n] % 1000000007;
     
-    int ans = dp[n-1]%M;
-    return ans;
 }
 
 int main(int argc, const char * argv[]) {
