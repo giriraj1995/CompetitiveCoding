@@ -45,6 +45,35 @@ int solve(const vector<int> A) {
     return ans+1;
 }
 
+long getWays(int n, vector<long> c) {
+
+    int a = (int)c.size();
+    vector<vector<long>> dp(a+1, vector<long>(n+1, 0));
+
+    for(int i = 0; i <= a; i++){
+        dp[i][0] = 1;
+    }
+
+    int ans = 0;
+
+    for(int i = 1; i <= a; i++) {
+
+        for(int j = 1; j <= n; j++) {
+
+            if(c[i-1] <= j) {
+                dp[i][j] = dp[i-1][j-c[i-1]] + dp[i-1][j];
+            }else{
+                dp[i][j] = dp[i-1][j];
+            }
+
+        }
+
+    }
+
+    return dp[a][n];
+}
+
+
 int main(int argc, const char * argv[]) {
     cout<<solve({100, 10, 8, 300, 6, 1, 4, 2});
     return 0;
