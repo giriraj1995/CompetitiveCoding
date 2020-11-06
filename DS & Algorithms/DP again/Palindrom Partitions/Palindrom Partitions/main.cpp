@@ -56,6 +56,6 @@ int minCut(string A) {
 }
 
 int main(int argc, const char * argv[]) {
-    cout<<minCut("giri");
+    cout<<minCut("giriraj");
     return 0;
 }
