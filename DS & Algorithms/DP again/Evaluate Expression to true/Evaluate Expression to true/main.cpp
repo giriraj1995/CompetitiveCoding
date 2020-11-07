@@ -15,7 +15,7 @@
 #include <queue>
 using namespace std;
 
-int solve(int i, int j, int want, string A, vector<vector<vector<int>>> dp){
+int solve(int i, int j, int want, string A, vector<vector<vector<int>>> &dp){
     
     if(i == j) {
         if(A[i] == 'T') {
@@ -97,7 +97,7 @@ int solve(int i, int j, int want, string A, vector<vector<vector<int>>> dp){
 
 
 int main(int argc, const char * argv[]) {
-    string exp = "T^T^T^F|F&F^F|T^F^T";
+    string exp = "T^T^T^F|F&F^F|T";
     int n = exp.size();
     vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(n+1, vector<int>(2, -1)));
     cout<<solve(0, exp.size()-1, true, exp, dp);
