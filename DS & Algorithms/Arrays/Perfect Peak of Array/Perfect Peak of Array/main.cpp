@@ -26,7 +26,6 @@ int perfectPeak(vector<int> &A) {
     if(n == 0)
         return 0;
         
-        
     left[0] = 0;
     right[n-1] = n-1;
     
