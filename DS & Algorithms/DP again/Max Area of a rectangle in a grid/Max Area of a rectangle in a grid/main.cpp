@@ -86,7 +86,7 @@ int maximalRectangle(vector<vector<int> > A) {
         return 0;
         
     vector<vector<int> > dp(n, vector<int>(m, 0));
-    
+
     dp[0] = A[0];
     
     for(int i = 1; i < n; i++) {
@@ -137,3 +137,5 @@ int main(int argc, const char * argv[]) {
         {1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1}})<<endl;
     return 0;
 }
+
+
