@@ -36,6 +36,16 @@ int solve(int floors, int eggs) {
     return ans;
     
 }
+
+//int solve_topDown(int eggs, int floors) {
+//
+//    vector<vector<int>> dp(eggs+1, vector<int>(floors +1, 0));
+//
+//    for (int i = 1; i <= eggs; i++) {
+//
+//    }
+//
+//}
 int main(int argc, const char * argv[]) {
     int floors = 9;
     int eggs = 3;
