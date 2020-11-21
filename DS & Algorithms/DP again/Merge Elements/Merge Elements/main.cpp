@@ -18,44 +18,52 @@ using namespace std;
 pair<int,int> dp[201][201];
 pair<int,int> fun(int i, int j,vector<int> &A)
 {
-pair<int,int> x;
-x.first=0;
-x.second=INT_MAX;
-if(i>j)
-{
-return x;
-}
-if(i==j)
-{
-x.first=A[i];
-x.second=0;
-return x;
-}
-if(dp[i][j].first!=-1)
-{
-return dp[i][j];
-}
-int temp;
-for(int k=i;k<j;k++)
-{
-temp=fun(i,k,A).second+fun(k+1,j,A).second+fun(i,k,A).first+fun(k+1,j,A).first;
-if(x.second>temp)
-{
-x.second=temp;
-x.first=fun(i,k,A).first+fun(k+1,j,A).first;
-}
-}
-return dp[i][j]=x;
+    pair<int,int> x;
+    x.first=0;
+    x.second=INT_MAX;
+    
+    if(i>j)
+    {
+        return x;
+    }
+    
+    if(i==j)
+    {
+        x.first=A[i];
+        x.second=0;
+        return x;
+    }
+    
+    if(dp[i][j].first!=-1)
+    {
+        return dp[i][j];
+    }
+    
+    int temp;
+    for(int k=i;k<j;k++)
+    {
+        int a = fun(i,k,A).second;
+        int b = fun(k+1,j,A).second;
+        int c = fun(i,k,A).first;
+        int d = fun(k+1,j,A).first;
+        temp=a+b+c+d;
+        
+        if(x.second>temp)
+        {
+            x.second=temp;
+            x.first=c+d;
+        }
+    }
+    return dp[i][j]=x;
 }
 
-int Solution::solve(vector<int> &A) {
-memset(dp,-1,sizeof(dp));
-return fun(0,A.size()-1,A).second;
+int solve(vector<int> A) {
+    memset(dp,-1,sizeof(dp));
+    return fun(0,A.size()-1,A).second;
 
 }
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    cout<<solve({1,3,7});
     return 0;
 }
