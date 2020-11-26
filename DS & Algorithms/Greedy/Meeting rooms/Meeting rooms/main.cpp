@@ -24,7 +24,6 @@ int solve(vector<vector<int> > A) {
     }
     
     sort(s.begin(), s.end());
-    
     int ans = 0;
     int cur = 0;
     
