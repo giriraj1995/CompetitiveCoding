@@ -1,70 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "8F224930-A3A7-4237-9DE0-EACC85ACEA61"
+   uuid = "37407262-2E40-489F-9EED-454C4B1A2A92"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "098D567D-EC87-4262-93B6-D52D6DCA2E7E"
+            uuid = "6D1D87D6-1BB1-4B21-B559-33004DCBA0DB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "prims algorithm 2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "solve2(A, B)"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "prim(A, B)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2E0CBB92-ABCD-41B2-9756-C1DAA46BB9B5"
+            uuid = "34839677-A934-4612-B884-8C083955BE01"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "prims algorithm 2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "solve(A, B)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "prim(A, B)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FFDA204E-2FCE-414C-B367-888F17486A50"
+            uuid = "E3E49119-EDFA-4284-B85B-F1DFDDD0ACE3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "prims algorithm 2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "solve(A, B)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "prim(A, B)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63882D45-0F28-469F-BFA3-BF925A876E8C"
+            uuid = "C086A94F-A7B7-4A76-AE13-A5A56CD4DE30"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "prims algorithm 2/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "solve3(x, ll, visited)"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "prim(A, B)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6A206B59-4A9C-4CBD-99CF-4CA6AFCCC0C7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "prims algorithm 2/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "prim(A, B)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

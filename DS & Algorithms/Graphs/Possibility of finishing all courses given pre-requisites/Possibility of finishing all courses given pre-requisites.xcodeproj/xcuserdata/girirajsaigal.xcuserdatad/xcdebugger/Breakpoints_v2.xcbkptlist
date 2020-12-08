@@ -1,70 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "8F224930-A3A7-4237-9DE0-EACC85ACEA61"
+   uuid = "4F2896BD-486B-4357-99DA-6995D29507C8"
    type = "1"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "098D567D-EC87-4262-93B6-D52D6DCA2E7E"
+            uuid = "0B7368BE-B5C0-4F38-8A7E-90C220F238C4"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "Possibility of finishing all courses given pre-requisites/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "solve2(A, B)"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "solve2(ele, v, visited)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2E0CBB92-ABCD-41B2-9756-C1DAA46BB9B5"
+            uuid = "C03C2E82-60CD-4341-9B38-FE85618B9AB6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "Possibility of finishing all courses given pre-requisites/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "solve(A, B)"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "solve(A, B, C)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FFDA204E-2FCE-414C-B367-888F17486A50"
-            shouldBeEnabled = "Yes"
+            uuid = "EA307EA8-C314-4345-B767-BD071177A8C1"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "Possibility of finishing all courses given pre-requisites/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "solve(A, B)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "solve(A, B, C)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63882D45-0F28-469F-BFA3-BF925A876E8C"
+            uuid = "F36A4006-D46B-4580-910D-031B8E390A09"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Detect Cycle in undirected graph/main.cpp"
+            filePath = "Possibility of finishing all courses given pre-requisites/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "solve3(x, ll, visited)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "solve(A, B, C)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "668EA0CC-4B4A-46CC-BA26-B718FA5BAF12"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Possibility of finishing all courses given pre-requisites/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "solve(A, B, C)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
