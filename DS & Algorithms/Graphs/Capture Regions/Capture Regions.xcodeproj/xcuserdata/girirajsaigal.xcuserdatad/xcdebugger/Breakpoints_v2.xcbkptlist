@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "720FD32A-2092-4EFF-A807-F325330CF4FA"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8603F6E-A1A2-4686-96FE-099C816D1509"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Capture Regions/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "solve(A)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E26E2B3-9EC7-45C3-B844-46B26681E114"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Capture Regions/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "solve(A)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Capture Regions/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "solve(A)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A - aba3a52a45556f52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "Capture Regions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Graphs/Capture%20Regions/Capture%20Regions/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "462">
+               </Location>
+               <Location
+                  uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A - aba3a52a45556f52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "Capture Regions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Graphs/Capture%20Regions/Capture%20Regions/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "485">
+               </Location>
+               <Location
+                  uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A - aba3a52a45556f52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "Capture Regions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Graphs/Capture%20Regions/Capture%20Regions/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1567">
+               </Location>
+               <Location
+                  uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A - aba3a52a45556f52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "Capture Regions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Graphs/Capture%20Regions/Capture%20Regions/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1581">
+               </Location>
+               <Location
+                  uuid = "FCFEE12A-11E6-45A4-9270-266025486D4A - aba3a52a45556f52"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;char, std::__1::allocator&lt;char&gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "Capture Regions"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Graphs/Capture%20Regions/Capture%20Regions/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1595">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0285E187-EEEB-4E87-8473-83D9347BE6DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Capture Regions/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "main(argc, argv)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6F164DB7-8424-40B7-A0B0-48683A34379C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Capture Regions/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "solve(A)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
