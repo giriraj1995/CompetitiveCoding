@@ -24,8 +24,10 @@ void dijkstra(int n, vector<int> &visited, vector<vector<int>> edges) {
         adj[edges[i][1]].push_back({edges[i][0], edges[i][2]});
     }
     
+    vector<int> parent(n);
     vector<int> dis(n, INT_MAX);
     dis[0] = 0;
+    parent[0] = -1;
     
     for(int c = 0; c <= n; c++) {
         
@@ -47,26 +49,49 @@ void dijkstra(int n, vector<int> &visited, vector<vector<int>> edges) {
             
             if(dis[u] + w < dis[v] && visited[v] == 0) {
                 dis[v] = dis[u] + w;
+                parent[v] = u;
             }
         }
     }
     
-    cout<<"done";
+    cout<<"WEIGHT\t"<<"\tPATH\t"<<endl;
+    for(int i = 1; i < n; i++) {
+        int x = i;
+        cout<<dis[i]<<"\t\t\t";
+
+        cout<<i <<" <- ";
+        while(parent[x] != -1) {
+            if(parent[parent[x]] == -1)
+                cout<<parent[x];
+            else
+                cout<<parent[x]<<" <- ";
+            x = parent[x];
+        }
+        
+        cout<<endl;
+    }
     return;
 }
 int main(int argc, const char * argv[]) {
+    int n = 9;
     vector<vector<int>> edges = {
         {0,1,4},
-        {0,2,8},
-        {1,2,11},
-        {1,4,2},
-        {1,3,8},
-        {3,4,4},
-        {2,4,1}
+        {0,4,8},
+        {1,2,8},
+        {1,4,11},
+        {2,3,7},
+        {2,6,4},
+        {2,8,2},
+        {3,7,9},
+        {3,6,14},
+        {4,8,7},
+        {4,5,1},
+        {5,8,6},
+        {5,6,2},
+        {6,7,10}
     };
-    
-    vector<int> visited(5, 0);
-    dijkstra(5, visited, edges);
+    vector<int> visited(n, 0);
+    dijkstra(n, visited, edges);
     return 0;
 }
 
