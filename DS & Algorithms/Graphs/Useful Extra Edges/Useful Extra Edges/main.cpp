@@ -16,23 +16,31 @@
 #include <set>
 using namespace std;
 
+#define pii pair<int,int>
+
 vector<int> dijkstra(int s, int n, vector<vector<pair<int,int>>> adj) {
     
     vector<bool> visited(n, false);
     vector<int> dis(n, INT_MAX);
+    priority_queue<pii, vector<pii>, greater<pii>> q;
+    q.push({0, s});
     dis[s] = 0;
     
-    for(int c = 1; c < n; c++) {
+    while(q.size() > 0) {
         
-        int u;
-        int m = INT_MAX;
+        int u = q.top().second;
+        q.pop();
         
-        for(int i = 0; i < n; i++) {
-            if(visited[i] == false && dis[i] < m) {
-                m = dis[i];
-                u = i;
-            }
-        }
+        if(visited[u] == true)
+            continue;
+        
+        
+        // for(int i = 0; i < n; i++) {
+        //     if(visited[i] == false && dis[i] < m) {
+        //         m = dis[i];
+        //         u = i;
+        //     }
+        // }
         
         visited[u] = true;
         
@@ -42,6 +50,7 @@ vector<int> dijkstra(int s, int n, vector<vector<pair<int,int>>> adj) {
             
             if(visited[v] == false && dis[u] + w < dis[v]) {
                 dis[v] = w + dis[u];
+                q.push({dis[v], v});
             }
         }
     }
@@ -63,7 +72,7 @@ int C, int D, vector<vector<int> > E) {
         
         if(E[i][0]-1 >= A || E[i][1]-1 >= A)
             continue;
-        
+            
         vector<vector<pair<int,int>>> madj = adj;
         madj[E[i][0]-1].push_back({E[i][1]-1, E[i][2]});
         madj[E[i][1]-1].push_back({E[i][0]-1, E[i][2]});
@@ -74,6 +83,7 @@ int C, int D, vector<vector<int> > E) {
     
     return ans == INT_MAX ? -1 : ans;
 }
+
 
 int main(int argc, const char * argv[]) {
     solve(6, {{1,5,5},{2,3,2}}, 2, 4, {{6,7,4}});
