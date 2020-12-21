@@ -36,7 +36,7 @@ vector<int> firstNegativeNumber(vector<int> arr, int k) {
     
     while(i < arr.size()) {
         
-        while(q.front().second <= i - k){
+        while(q.size() > 0 && q.front().second <= i - k){
             q.pop();
         }
         
