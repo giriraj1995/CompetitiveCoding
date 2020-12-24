@@ -61,6 +61,7 @@ int solve(vector<int> &A) {
     for(int i = 1; i < n-1; i++) {
         ans = max(ans, A[i] + le[i] + re[i]);
     }
+    re.erase(re.begin());
     return 0;
 }
 
