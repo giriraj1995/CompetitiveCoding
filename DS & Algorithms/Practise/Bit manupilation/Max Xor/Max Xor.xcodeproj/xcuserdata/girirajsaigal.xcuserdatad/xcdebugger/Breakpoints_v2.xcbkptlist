@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B4967535-50B4-4406-BA60-E486A0A5FE8D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F87D929-619B-4C2D-AAF3-7F6AD631AB8E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Max Xor/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "maxXor(arr, q)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21E661E3-841B-4696-A974-1FE5B11AFE14"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Max Xor/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "maxXor(arr, q)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "21E661E3-841B-4696-A974-1FE5B11AFE14 - 9e3cba9e5eb63f55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maxXor(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;)"
+                  moduleName = "Max Xor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Bit%20manupilation/Max%20Xor/Max%20Xor/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  uuid = "21E661E3-841B-4696-A974-1FE5B11AFE14 - 9e3cba9e5eb63f55"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "maxXor(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;)"
+                  moduleName = "Max Xor"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Bit%20manupilation/Max%20Xor/Max%20Xor/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "296">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7157109-742B-42E8-BA29-8142FD51A372"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Max Xor/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "insert(n, node)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "311FFAF2-C66F-4EAA-BB26-B1D1AA019574"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Max Xor/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "insert(n, node)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CC582E8-2B6B-4FD7-97C0-F89BE07C4DA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Max Xor/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "solve(n, node)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
