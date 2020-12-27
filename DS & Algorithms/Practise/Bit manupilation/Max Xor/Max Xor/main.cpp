@@ -71,6 +71,7 @@ int solve(int n, TrieNode* node) {
 }
 // Complete the maxXor function below.
 vector<int> maxXor(vector<int> arr, vector<int> q) {
+    
     TrieNode* node = new TrieNode();
     vector<int> ans;
     
@@ -83,6 +84,7 @@ vector<int> maxXor(vector<int> arr, vector<int> q) {
     }
     
     return ans;
+    
 }
 
 int main(int argc, const char * argv[]) {
