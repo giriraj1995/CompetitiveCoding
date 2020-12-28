@@ -18,6 +18,7 @@ using namespace std;
 
 int solve(string A) {
     
+    set<int> ss;
     stack<char> s;
     int ans = 0;
     for(int i = 0; i < A.size(); i++) {
