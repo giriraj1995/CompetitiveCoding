@@ -30,6 +30,6 @@ int solve(int A) {
 }
 
 int main(int argc, const char * argv[]) {
-    
+    cout<<"hello world";
     return 0;
 }
