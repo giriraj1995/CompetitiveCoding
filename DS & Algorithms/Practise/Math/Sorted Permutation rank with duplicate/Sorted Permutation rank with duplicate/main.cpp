@@ -14,98 +14,63 @@
 #include <stack>
 #include <queue>
 #include <set>
+#define MOD 1000003
+
 using namespace std;
 
-int findRank(string a) {
+long findRank(string A) {
     
-    int fact[100];
-    memset(fact, 0, sizeof(fact));
-    
-    fact[0] = fact[1] = 1;
-    
-    for(int i = 2; i <= a.size(); i++) {
-        fact[i] = (fact[i-1] * i) % 1000003;
-    }
-    
-    string b = a;
-    
-    map<char, int> mp;
-    
-    for(char f : b) {
-        mp[f]++;
-    }
-    
-    int rank = 1;
-    sort(b.begin(), b.end());
-    
-    int i = 0;
-    int j = 0;
-    while(i < a.size()) {
-        if(a[i] != b[0]) {
-            int k = 0;
-            int count = 0;
-            char c = a[i];
-            set<char> s;
-            
-            for(char t : b) {
-                if(t == c)
-                    break;
-                
-                if(s.find(t) == s.end()) {
-                    k++;
-                    s.insert(t);
-                }
-                count++;
-            }
-            
-            
-            for(auto d : s) {
-                long fac = 0;
-                map<char, int> mp2 = mp;
-                mp2[d]--;
-                
-                if(mp2[d] == 0)
-                    mp2.erase(d);
-                
-                fac += fact[b.size()-1];
-                
-                for(auto r : mp2) {
-                    if(r.second > 1) {
-                        fac = fac / fact[r.second];
-                    }
-                }
-                
-                rank = rank + fac;
-            }
-            
-            mp[c]--;
-            if(mp[c] == 0)
-                mp.erase(c);
-            
-            b.erase(b.begin() + count);
-            
-            
-//
-//            long fac = fact[b.size()];
-//
-//            for(auto itr : mp) {
-//                if(itr.second > 1) {
-//                    fac = fac / fact[itr.second];
-//                }
-//            }
-//
-            i++;
-        }else{
-            b.erase(b.begin());
-            i++;
+        
+        int n = A.size();
+        
+        vector<long long> fact(n+1, 1);
+        
+        for(int i = 2;i <= n; i++) {
+            fact[i] = (fact[i-1] * i) % MOD;
         }
+        
+        map<char, int> mp;
+        
+        for(char c : A){
+            mp[c] = 1;
+        }
+        
+        map<char, int> mp2;
+        
+        int rank = 1;
+        
+        for(auto i : mp) {
+            mp2[i.first] = rank++;
+        }
+        
+        mp.clear();
+        
+        long long ans = 1;
+        
+        for(int i = A.size()-1; i >= 0; i--) {
+            long long count = 0;
+            for(int j = i + 1; j < A.size(); j++) {
+                if(A[j] < A[i])
+                    count++;
+            }
+            
+            double curr = 1;
+            
+            mp[A[i]]++;
+            
+            for(auto m : mp) {
+                if(m.second > 1) {
+                    curr = (curr / fact[m.second]);
+                }
+            }
+            
+            ans += (long long)((fact[A.size() - i - 1] * count) % MOD * curr) % MOD;
+        }
+        
+        return ans;
     }
-    
-    return rank;
-}
-
 
 int main(int argc, const char * argv[]) {
-    cout<<findRank("baaa")<<endl;
+    cout<<findRank("asasdsdsadasdadsadasdsa")<<endl;
     return 0;
 }

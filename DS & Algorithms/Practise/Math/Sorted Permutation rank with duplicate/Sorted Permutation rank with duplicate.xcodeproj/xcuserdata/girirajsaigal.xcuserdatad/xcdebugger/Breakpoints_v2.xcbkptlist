@@ -14,128 +14,32 @@
             filePath = "Sorted Permutation rank with duplicate/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "findRank(a)"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "findRank(A)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E5E58C40-61CB-4A35-B3A4-4778888DCA1A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sorted Permutation rank with duplicate/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "findRank(a)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "294D65CE-4906-4D80-AD2F-01211FDF88A3"
+            uuid = "616F568C-9115-48B4-93BF-7AF38B3F9651"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sorted Permutation rank with duplicate/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "findRank(a)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "findRank(A)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3B4D1616-FDFE-42BD-AAAC-EA5AB61E41F9"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sorted Permutation rank with duplicate/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "findRank(a)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "842D63E7-1765-4791-B9BD-53D25C54DD7B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sorted Permutation rank with duplicate/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "findRank(a)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "46BEA3C5-D8E9-40D7-83BB-95E9F30D57F7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sorted Permutation rank with duplicate/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "findRank(a)"
-            landmarkType = "9">
-            <Locations>
-               <Location
-                  uuid = "46BEA3C5-D8E9-40D7-83BB-95E9F30D57F7 - effb63e15f3bf550"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "findRank(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
-                  moduleName = "Sorted Permutation rank with duplicate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Math/Sorted%20Permutation%20rank%20with%20duplicate/Sorted%20Permutation%20rank%20with%20duplicate/main.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "1067">
-               </Location>
-               <Location
-                  uuid = "46BEA3C5-D8E9-40D7-83BB-95E9F30D57F7 - effb63e15f3bf550"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "findRank(std::__1::basic_string&lt;char, std::__1::char_traits&lt;char&gt;, std::__1::allocator&lt;char&gt; &gt;)"
-                  moduleName = "Sorted Permutation rank with duplicate"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Math/Sorted%20Permutation%20rank%20with%20duplicate/Sorted%20Permutation%20rank%20with%20duplicate/main.cpp"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "1175">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4009BE56-4AF6-409F-B78A-D3DDC4EE3AAB"
+            uuid = "75DC51B4-19B2-4CDE-BF66-514657D5F76A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -144,11 +48,43 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "50"
             endingLineNumber = "50"
-            landmarkName = "findRank(a)"
+            landmarkName = "findRank(A)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75971FCE-EC77-4DE1-95A3-88B5C73E8462"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sorted Permutation rank with duplicate/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "findRank(A)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5887CC34-4C14-40C6-A3F6-2DC1EC8C50ED"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sorted Permutation rank with duplicate/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "findRank(A)"
             landmarkType = "9">
             <Locations>
                <Location
-                  uuid = "4009BE56-4AF6-409F-B78A-D3DDC4EE3AAB - effb63e15f3bf550"
+                  uuid = "5887CC34-4C14-40C6-A3F6-2DC1EC8C50ED - effb63e15f3bf550"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -158,12 +94,12 @@
                   urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Math/Sorted%20Permutation%20rank%20with%20duplicate/Sorted%20Permutation%20rank%20with%20duplicate/main.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "682">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "270">
                </Location>
                <Location
-                  uuid = "4009BE56-4AF6-409F-B78A-D3DDC4EE3AAB - effb63e15f3bf550"
+                  uuid = "5887CC34-4C14-40C6-A3F6-2DC1EC8C50ED - effb63e15f3bf550"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -173,9 +109,9 @@
                   urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Practise/Math/Sorted%20Permutation%20rank%20with%20duplicate/Sorted%20Permutation%20rank%20with%20duplicate/main.cpp"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "766">
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "330">
                </Location>
             </Locations>
          </BreakpointContent>
