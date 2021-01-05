@@ -71,6 +71,9 @@ long findRank(string A) {
     }
 
 int main(int argc, const char * argv[]) {
-    cout<<findRank("asasdsdsadasdadsadasdsa")<<endl;
+    //cout<<findRank("asasdsdsadasdadsadasdsa")<<endl;
+    vector<int> x= {12,3};
+    x.insert(x.begin(), 1);
+    
     return 0;
 }
