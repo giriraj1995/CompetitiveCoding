@@ -39,7 +39,6 @@ int solve(string A, int rank, set<char> &s, int i) {
                 }
                 //i++;
             }
-            
         }
         
         s.erase(s.begin());
