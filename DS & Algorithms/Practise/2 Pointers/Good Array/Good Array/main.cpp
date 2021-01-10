@@ -72,12 +72,30 @@ int solve(vector<int> A, int B) {
         
         j++;
     }
-    
     return ans;
+}
+
+int solve2(vector<int> A, int K) {
+    int i=0, j=0, len = A.size(), count = 0;
+    unordered_map<int, int> umap;
+
+    while( j < len) {
+        umap[A[j]] ++;
+        while (umap.size() > K) {
+            umap[A[i]] --;
+            if(not umap[A[i]])
+                umap.erase(A[i]);
+            i ++;
+        }
+        j ++;
+        // all contiguous subarrays b/w i and j will have at-max K distinct elements
+        count += j-i;
+    }
+    return count;
 }
 
 
 int main(int argc, const char * argv[]) {
-    solve({5, 3, 5, 1, 3 }, 3);
+    solve2({5, 3, 5, 1, 3 }, 3);
     return 0;
 }
