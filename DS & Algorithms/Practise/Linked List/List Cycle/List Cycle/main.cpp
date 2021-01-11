@@ -7,7 +7,14 @@
 //
 
 #include <iostream>
-
+#include <cmath>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <queue>
+#include <set>
+using namespace std;
 
 //  Definition for singly-linked list.
   struct ListNode {
@@ -48,6 +55,6 @@ ListNode* detectCycle(ListNode* A) {
 
 
 int main(int argc, const char * argv[]) {
-    
+    map<char, int> mp;
     return 0;
 }
