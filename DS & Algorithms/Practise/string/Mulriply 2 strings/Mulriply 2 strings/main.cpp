@@ -29,7 +29,7 @@ string multiply(string A, string B) {
         }
     }
     
-    while(res.size() > 0 && res[0] != '0') {
+    while(res.size() > 0 && res[0] == '0') {
         res.erase(res.begin());
     }
     
@@ -50,6 +50,6 @@ string multiply(string A, string B) {
 }
 
 int main(int argc, const char * argv[]) {
-    multiply("123", "456");
+    cout<<multiply("900", "9")<<endl;
     return 0;
 }
