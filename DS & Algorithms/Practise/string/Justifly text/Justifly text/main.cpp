@@ -17,92 +17,109 @@
 using namespace std;
 
 vector<string> fullJustify(vector<string> A, int B) {
-    vector<string> ans;
-    int i = 0;
-    int s = 0;
-    int w = 0;
-    string mak = "";
-    while(i < A.size()) {
-        int g = 0;
-        
-        if(s != 0)
-            g++;
+        if(A.size() == 0)
+            return {};
             
-        if(A[i].size() + s + g <= B) {
-            s += A[i].size() + g;
-            if(g) {
-                mak += " "+A[i];
-            }else{
-                mak += A[i];
-            }
-            w++;
-            i++;
-        }else{
-            int left = B - s;
-            
-            int add, rem;
-            if(w != 1){
-                add = left/(w-1);
-                rem = left%(w-1);
-            }
-            else{
-                add = left;
-                rem = 0;
-            }
-            bool flag = false;
-            for(int i = 0; i < s; i++) {
-                if(!flag && mak[i] == ' ') {
-                    for(int j = 0; j < add; j++){
-                        mak.insert(mak.begin()+i,' ');
-                        i++;
-                        s++;
-                    }
-                    
-//                    for(int j = 0; j < rem; j++){
-//                        mak.insert(mak.begin()+i,' ');
-//                        i++;
-//                        s++;
-//                    }
-                    
-                    flag = true;
-                }else if(flag && mak[i] == ' '){
-                    for(int j = 0; j < add; j++){
-                        mak.insert(mak.begin()+i,' ');
-                        i++;
-                        s++;
-                    }
-                }
-            }
-            int j = 0;
-            while(rem > 0) {
-                if(mak[j] == ' '){
-                    mak.insert(mak.begin()+j,' ');
-                    j++;
-                    s++;
-                }
-                j = (j + 1) % s;
-            }
-            
-            w = 0;
-            s = 0;
-            ans.push_back(mak);
-            mak = "";
+        if(A.size() == 1) {
+            if(A[0].compare("") == 0)
+                return {};
         }
-    }
-    
-    if(mak.size() != B) {
-        int left = B - s;
-        while(left--)
-            mak.insert(mak.begin()+s,' ');
-    }
-    
-    ans.push_back(mak);
-    
-    return ans;
+            vector<string> ans;
+        int i = 0;
+        int s = 0;
+        int w = 0;
+        string mak = "";
+        while(i < A.size()) {
+            int g = 0;
+            
+            if(s != 0)
+                g++;
+                
+            if(A[i].size() + s + g <= B) {
+                s += A[i].size() + g;
+                if(g) {
+                    mak += " "+A[i];
+                }else{
+                    mak += A[i];
+                }
+                w++;
+                i++;
+            }else{
+                int left = B - s;
+                
+                int add, rem;
+                if(w != 1){
+                    add = left/(w-1);
+                    rem = left%(w-1);
+                }
+                else{
+                    add = left;
+                    while(add--) mak += " ";
+                    
+                    w = 0;
+                    s = 0;
+                    ans.push_back(mak);
+                    mak = "";
+                    
+                    continue;
+                    rem = 0;
+                }
+                bool flag = false;
+                for(int i = 0; i < s; i++) {
+                    if(!flag && mak[i] == ' ') {
+                        for(int j = 0; j < add; j++){
+                            mak.insert(mak.begin()+i,' ');
+                            i++;
+                            s++;
+                        }
+                        
+    //                    for(int j = 0; j < rem; j++){
+    //                        mak.insert(mak.begin()+i,' ');
+    //                        i++;
+    //                        s++;
+    //                    }
+                        
+                        flag = true;
+                    }else if(flag && mak[i] == ' '){
+                        for(int j = 0; j < add; j++){
+                            mak.insert(mak.begin()+i,' ');
+                            i++;
+                            s++;
+                        }
+                    }
+                }
+                
+                int j = 0;
+                while(rem > 0) {
+                    if(mak[j] == ' ' && mak[j-1] != ' '){
+                        mak.insert(mak.begin()+j,' ');
+                        j++;
+                        s++;
+                        rem--;
+                    }
+                    j = (j + 1) % s;
+                }
+                
+                w = 0;
+                s = 0;
+                ans.push_back(mak);
+                mak = "";
+            }
+        }
+        
+        if(mak.size() != B) {
+            int left = B - s;
+            while(left--)
+                mak.insert(mak.begin()+s,' ');
+        }
+        
+        ans.push_back(mak);
+        
+        return ans;
 }
 
 
 int main(int argc, const char * argv[]) {
-    fullJustify({"glu", "muskzjyen", "ahxkp", "t", "djmgzzyh", "jzudvh", "raji", "vmipiz", "sg", "rv", "mekoexzfmq", "fsrihvdnt", "yvnppem", "gidia", "fxjlzekp", "uvdaj", "ua", "pzagn", "bjffryz", "nkdd", "osrownxj", "fvluvpdj", "kkrpr", "khp", "eef", "aogrl", "gqfwfnaen", "qhujt", "vabjsmj", "ji", "f", "opihimudj", "awi", "jyjlyfavbg", "tqxupaaknt", "dvqxay", "ny", "ezxsvmqk", "ncsckq", "nzlce", "cxzdirg", "dnmaxql", "bhrgyuyc", "qtqt", "yka", "wkjriv", "xyfoxfcqzb", "fttsfs", "m"},144);
+    fullJustify({"am", "fasgoprn", "lvqsrjylg", "rzuslwan", "xlaui", "tnzegzuzn", "kuiwdc", "fofjkkkm", "ssqjig", "tcmejefj", "uixgzm", "lyuxeaxsg", "iqiyip", "msv", "uurcazjc", "earsrvrq", "qlq", "lxrtzkjpg", "jkxymjus", "mvornwza", "zty", "q", "nsecqphjy"},14);
     return 0;
 }
