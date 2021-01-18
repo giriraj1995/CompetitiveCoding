@@ -47,8 +47,30 @@ int cntMatrix(vector<int> A) {
     for(int i = 2; i <= len; i++) {
         if(len % i == 0 && prd % i == 0) {
             
+            int lengthtocheck = i;
+            int ch = 1;
+            int k = 1;
+            bool no = false;
             
+            while(k < prd) {
+                
+                if(A[k] > A[k-1]) {
+                    ch++;
+                }else{
+                    no = true;
+                    break;
+                }
+                
+                if(ch == lengthtocheck) {
+                    ch = 1;
+                    k++;
+                }
+                
+                k++;
+            }
             
+            if(no)
+                break;
             
             int colSize = i;
             int col = prd / i;
@@ -65,7 +87,8 @@ int cntMatrix(vector<int> A) {
 }
 
 
+
 int main(int argc, const char * argv[]) {
-    cout<<cntMatrix({1, 4, 3, 2});
+    cout<<cntMatrix({1, 3, 2});
     return 0;
 }
