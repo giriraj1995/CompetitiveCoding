@@ -53,6 +53,6 @@ long solve(int A) {
 }
 
 int main(int argc, const char * argv[]) {
-    cout<<solve(1000000)<<endl;
+    cout<<solve(29)<<endl;
     return 0;
 }
