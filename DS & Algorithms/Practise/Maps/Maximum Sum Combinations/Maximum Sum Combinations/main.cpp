@@ -17,19 +17,24 @@
 using namespace std;
 
 vector<int> solve(vector<int> &A, vector<int> &B, int C) {
-    vector<int>res;
-    priority_queue<tuple<int, int, int>>q;
+    priority_queue<tuple<int,int,int>> h;
+    
     sort(A.rbegin(), A.rend());
     sort(B.rbegin(), B.rend());
-    for(int i=0; i<C; i++) {
-        q.push({A[i]+B[0], i, 0});
+    
+    for(int i = 0; i < C; i++) {
+        h.push({A[i] + B[0], i, 0});
     }
-    while(res.size()<C) {
-        auto [sum, i, j] = q.top(); q.pop();
-        res.push_back(sum);
-        q.push({A[i]+B[j+1], i, j+1});
+    
+    vector<int> ans;
+    for(int c = 0; c < C; c++) {
+        auto [sum, i, j] = h.top();
+        h.pop();
+        ans.push_back(sum);
+        h.push({A[i] + A[j+1], i, j+1});
     }
-    return res;
+    
+    return ans;
 }
 
 int main(int argc, const char * argv[]) {
