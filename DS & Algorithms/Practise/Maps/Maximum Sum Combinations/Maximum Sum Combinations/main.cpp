@@ -18,7 +18,7 @@ using namespace std;
 
 vector<int> solve(vector<int> &A, vector<int> &B, int C) {
     priority_queue<tuple<int,int,int>> h;
-    
+    map<int, int> mp;
     sort(A.rbegin(), A.rend());
     sort(B.rbegin(), B.rend());
     
