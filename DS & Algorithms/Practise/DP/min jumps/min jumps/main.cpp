@@ -35,6 +35,7 @@ vector<int> minJumps(vector<int> &A, int B) {
         
     dp[0] = A[0];
     
+    
     for(int i = 1; i < n; i++) {
         
         if(A[i-1] == -1 || dp[i-1] == INT_MAX) {
