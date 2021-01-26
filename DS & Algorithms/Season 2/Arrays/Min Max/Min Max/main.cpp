@@ -30,6 +30,6 @@ int solve(vector<int> &A) {
 
 
 int main(int argc, const char * argv[]) {
-    
+    cout<<INT_MAX<<endl;
     return 0;
 }
