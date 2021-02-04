@@ -112,6 +112,7 @@ int gcd(int A, int B) {
 
 
 
+
 int main(int argc, const char * argv[]) {
     //cout<<solve("74094882455")<<endl;
     gcd(4,6);
