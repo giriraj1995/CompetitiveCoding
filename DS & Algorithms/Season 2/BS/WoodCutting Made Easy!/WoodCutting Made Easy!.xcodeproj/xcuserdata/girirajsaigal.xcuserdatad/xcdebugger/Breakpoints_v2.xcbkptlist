@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "87081163-4381-4CA3-A050-E5328252AD82"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A58261FF-A5D2-487A-9EC0-3721C07A4B92"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WoodCutting Made Easy!/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "total(x, A)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "A58261FF-A5D2-487A-9EC0-3721C07A4B92 - 80a3cc20e9c3f20b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "total(int, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;)"
+                  moduleName = "WoodCutting Made Easy!"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/BS/WoodCutting%20Made%20Easy!/WoodCutting%20Made%20Easy!/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "A58261FF-A5D2-487A-9EC0-3721C07A4B92 - 80a3cc20e9c3f20b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "total(int, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;)"
+                  moduleName = "WoodCutting Made Easy!"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/BS/WoodCutting%20Made%20Easy!/WoodCutting%20Made%20Easy!/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "83">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61594521-7A11-4E1C-B3A2-61FD5C9C4102"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WoodCutting Made Easy!/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "solve(A, B)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "61594521-7A11-4E1C-B3A2-61FD5C9C4102 - c838426de9770a2d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "WoodCutting Made Easy!"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/BS/WoodCutting%20Made%20Easy!/WoodCutting%20Made%20Easy!/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "61594521-7A11-4E1C-B3A2-61FD5C9C4102 - c838426de9770a2d"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "WoodCutting Made Easy!"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Desktop/Algorithms/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/BS/WoodCutting%20Made%20Easy!/WoodCutting%20Made%20Easy!/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "88">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47200249-387E-4E86-A4F6-A6C662BD28A5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WoodCutting Made Easy!/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "solve(A, B)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30D0D710-79B1-4029-B86D-5C191E3E064C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WoodCutting Made Easy!/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "solve(A, B)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
