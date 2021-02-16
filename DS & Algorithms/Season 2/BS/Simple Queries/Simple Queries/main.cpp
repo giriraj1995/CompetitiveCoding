@@ -40,6 +40,7 @@ vector<int> solve(vector<int> A, vector<int> B) {
     int n=(int)A.size();
     vector<int> leftFreq(n, 1);
     vector<int> rightFreq(n, 1);
+    
     for(int i=1; i<n; i++){
         int prev=i-1;
         while(prev>=0 && A[prev]<=A[i]){
@@ -47,6 +48,7 @@ vector<int> solve(vector<int> A, vector<int> B) {
             prev -= leftFreq[prev];
         }
     }
+    
     for(int i=n-2; i>=0; i--){
         int next=i+1;
         while(next<n && A[next]<A[i]){
@@ -71,6 +73,6 @@ vector<int> solve(vector<int> A, vector<int> B) {
 }
 
 int main(int argc, const char * argv[]) {
-    solve({1, 2, 4}, {1, 2, 3, 4, 5, 6});
+    solve({0, 5, 1, 2, 3, 4, 3, 5}, {1});
     return 0;
 }
