@@ -28,6 +28,7 @@ int findPivot(const vector<int> &A){
     return h;
     
 }
+
 int isPresent(const vector<int> &A,int l,int h,int val){
     
     while(l<=h){
