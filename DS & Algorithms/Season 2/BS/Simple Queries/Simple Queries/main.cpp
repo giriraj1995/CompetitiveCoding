@@ -60,6 +60,7 @@ vector<int> solve(vector<int> A, vector<int> B) {
     vector<pair<int, long long>> numFreq(n);
     for(int i=0; i<n; i++) numFreq[i] = {divisorProduct(A[i]), leftFreq[i]*rightFreq[i]};
     sort(numFreq.begin(), numFreq.end(), compare);
+    
     vector<long long> cumFreq(n);
     cumFreq[0]=numFreq[0].second;
     for(int i=1; i<n; i++) cumFreq[i] = numFreq[i].second + cumFreq[i-1];
