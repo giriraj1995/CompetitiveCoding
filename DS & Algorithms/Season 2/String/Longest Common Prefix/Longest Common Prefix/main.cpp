@@ -18,6 +18,7 @@ using namespace std;
 
 string longestCommonPrefix(vector<string> A) {
     int len = INT_MAX;
+    int mod = 1000000007;
     
     for(string x : A) {
         len = min(len, (int)x.size());
