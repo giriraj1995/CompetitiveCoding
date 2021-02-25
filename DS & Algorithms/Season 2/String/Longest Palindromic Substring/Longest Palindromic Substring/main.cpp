@@ -16,70 +16,87 @@
 #include <set>
 using namespace std;
 
-bool isPalindrom(string x, int i, int j) {
-    while(i < j) {
-        if(x[i] != x[j])
-            return false;
-        i++;
-        j--;
-    }
-    
-    return true;
-}
+//bool isPalindrom(string x, int i, int j) {
+//    while(i < j) {
+//        if(x[i] != x[j])
+//            return false;
+//        i++;
+//        j--;
+//    }
+//
+//    return true;
+//}
+//
+//int longest(string a, int i, int j, int &s, int &e, int &ans, vector<vector<int>> &dp) {
+//
+//    if(dp[i][j] != -1)
+//        return dp[i][j];
+//
+//    if(i > j) {
+//        return dp[i][j] = 0;
+//    }
+//
+//    if(i == j) {
+//        return dp[i][j] = 1;
+//    }
+//
+//    if(isPalindrom(a, i, j)) {
+//        if(j-i+1 > ans) {
+//            s = i;
+//            e = j;
+//            ans = j - i + 1;
+//        }
+//        return dp[i][j] = j - i + 1;
+//    }
+//
+//    int left = longest(a,i,j-1,s,e,ans,dp);
+//    int right = longest(a,i+1,j,s,e,ans,dp);
+//
+//    if(left > ans) {
+//        s = i;
+//        e = j-1;
+//        ans = left;
+//    }
+//
+//    if(right > ans) {
+//        s = i+1;
+//        e = j;
+//        ans = right;
+//    }
+//
+//    return dp[i][j] = max(left,right);
+//}
 
-int longest(string a, int i, int j, int &s, int &e, int &ans, vector<vector<int>> &dp) {
-    
-    if(dp[i][j] != -1)
-        return dp[i][j];
-        
-    if(i > j) {
-        return dp[i][j] = 0;
+void findCount(string A, int i, int j, int count, int &pos, int &maxLen) {
+    while(i >= 0 && j < A.size() && A[i] == A[j]) {
+        i--;
+        j++;
+        count += 2;
     }
     
-    if(i == j) {
-        return dp[i][j] = 1;
+    if(count > maxLen) {
+        pos = i + 1;
+        maxLen = count;
     }
-    
-    if(isPalindrom(a, i, j)) {
-        if(j-i+1 > ans) {
-            s = i;
-            e = j;
-            ans = j - i + 1;
-        }
-        return dp[i][j] = j - i + 1;
-    }
-    
-    int left = longest(a,i,j-1,s,e,ans,dp);
-    int right = longest(a,i+1,j,s,e,ans,dp);
-
-    if(left > ans) {
-        s = i;
-        e = j-1;
-        ans = left;
-    }
-
-    if(right > ans) {
-        s = i+1;
-        e = j;
-        ans = right;
-    }
-
-    return dp[i][j] = max(left,right);
 }
 
 string longestPalindrome(string A) {
-    if(A.size() <= 1)
+    if(A.size() == 1)
         return A;
-    int start,end;
-    int ans = 0;
-    vector<vector<int>> dp(A.size(), vector<int>(A.size(), -1));
-    longest(A,0,A.size()-1,start,end,ans,dp);
-    return A.substr(start,ans);
+    
+    int maxLen = 1;
+    int pos = 0;
+    for(int i = 0; i < A.size(); i++) {
+        findCount(A, i-1, i+1, 1, pos, maxLen);
+        findCount(A, i, i+1, 0, pos, maxLen);
+    }
+    
+    return A.substr(pos,maxLen);
 }
 
 
 int main(int argc, const char * argv[]) {
-    cout<<longestPalindrome("ab");
+    cout<<longestPalindrome("giri");
     return 0;
 }
 
