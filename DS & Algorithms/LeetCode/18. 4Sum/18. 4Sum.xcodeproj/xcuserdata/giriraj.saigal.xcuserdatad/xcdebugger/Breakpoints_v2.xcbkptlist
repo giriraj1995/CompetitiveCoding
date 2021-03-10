@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8089D49D-8BC6-45EB-8F7E-6B45F5007632"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "998BD4B8-FABE-45F7-B509-EBB634C4CA33"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "18. 4Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "fourSum(nums, target)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5870360E-9C5C-4A6E-9748-330B6ABA250C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "18. 4Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "fourSum(nums, target)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "5870360E-9C5C-4A6E-9748-330B6ABA250C - e67921ffe5a1737d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fourSum(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "18. 4Sum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giriraj.saigal/Documents/CompetitiveCoding/DS%20&amp;%20Algorithms/LeetCode/18.%204Sum/18.%204Sum/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "983">
+               </Location>
+               <Location
+                  uuid = "5870360E-9C5C-4A6E-9748-330B6ABA250C - e67921ffe5a1737d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "fourSum(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "18. 4Sum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giriraj.saigal/Documents/CompetitiveCoding/DS%20&amp;%20Algorithms/LeetCode/18.%204Sum/18.%204Sum/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1088">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31DCE317-E750-448D-A725-30E62E95E69C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "18. 4Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "fourSum(nums, target)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
