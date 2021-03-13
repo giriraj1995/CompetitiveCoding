@@ -30,13 +30,13 @@ int count(ListNode* x, int c) {
     if(x == NULL)
         return c;
     else
-        return count(x->next, c+1);
+       return count(x->next, c+1);
 }
 
 ListNode* merge(ListNode* x, ListNode* y) {
     ListNode* head = new ListNode(-1);
     ListNode* temp = head;
-    
+
     while(x != NULL && y != NULL) {
         if(x->val < y->val) {
             temp->next = new ListNode(x->val);
@@ -45,50 +45,58 @@ ListNode* merge(ListNode* x, ListNode* y) {
             temp->next = new ListNode(y->val);
             y = y->next;
         }
-        
+
         temp = temp->next;
     }
-    
+
     while(x != NULL) {
-        temp->next = new ListNode(x->val);
-        x = x->next;
-        temp = temp->next;
+        temp->next = x;
+        break;
     }
-    
+
     while(y != NULL) {
-        temp->next = new ListNode(y->val);
-        y = y->next;
-        temp = temp->next;
+        temp->next = y;
+        break;
     }
-    
+
     return head->next;
 }
 
 ListNode* mergeKLists(vector<ListNode*> lists) {
     int n = (int)lists.size();
-    
+
     if(n == 0) {
         return NULL;
     }
-    
+
     if(n == 1) {
         return lists[0];
     }
-    
-    vector<pair<int,ListNode*>> si;
-    
+
+    priority_queue<pair<int,ListNode*>, vector<pair<int,ListNode*>>,                        greater<pair<int,ListNode*>>> si;
+
     for(int i = 0; i < n; i++)
-        si.push_back({count(lists[i], 0), lists[i]});
+        si.push({count(lists[i], 0), lists[i]});
+
+    int i = 0;
+    ListNode* head = NULL;
     
-    sort(si.begin(), si.end());
-    
-    ListNode* prev = si[0].second;
-    
-    for(int i = 1; i < n; i++) {
-        prev = merge(prev, si[i].second);
+    while(si.size() > 0) {
+        if(i == 0) {
+            pair<int,ListNode*> x = si.top();
+            si.pop();
+            pair<int,ListNode*> y = si.top();
+            si.pop();
+            head = merge(x.second,y.second);
+            i++;
+        }else{
+            pair<int,ListNode*> x = si.top();
+            si.pop();
+            head = merge(head, x.second);
+        }
     }
-    
-    return prev;
+
+    return head;
 }
 
 int main(int argc, const char * argv[]) {
