@@ -16,7 +16,7 @@
 #include <set>
 using namespace std;
 
-int solve_min_no_BS(vector<int> &A, int n) {
+int solve_min_no_BS(vector<int> A, int n) {
     if(n == 0)
         return -1;
     
@@ -44,15 +44,19 @@ int solve_min_no_BS(vector<int> &A, int n) {
             if(m == st) {
                 if(A[m] < A[m+1])
                     return st;
+                else
+                    break;
             }else{
                 if(A[m] < A[m-1]){
                     return en;
                 }
+                else
+                    break;
             }
         }
     }
         
-    return res;
+    return res+1;
 }
 
 void solve(int i, int n, int Z, int O, vector<int> out,set<vector<int>> s) {
@@ -102,28 +106,30 @@ void solve(int i, int n, int Z, int O, vector<int> out,set<vector<int>> s) {
 //}
 
 int main(int argc, const char * argv[]) {
-    vector<int> A = {6, 17, 41, 3, 5, 2};
-    // leader no greater than right ajacent
-    
-    int n = 4;
-    //0110
-    set<vector<int>> ans;
-    //1110
-    int noOfZero = 0;
-    int noOfones = 0;
-    vector<int> out;
-    solve(0, 4, 0, 0, out, ans);
-
-    for(vector<int> i : ans){
-        for(auto k : i)
-            cout<<k;
-        cout<<endl;
-    }
-    
-//    vector<string> arr = {"bad", "mad", "dad", "dam", "ban", "bat", "add", "sum", "num"};
-//    solve(arr);
+//    vector<int> A = {6, 17, 41, 3, 5, 2};
+//    // leader no greater than right ajacent
 //
-//    O(m2+n);
+//    int n = 4;
+//    //0110
+//    set<vector<int>> ans;
+//    //1110
+//    int noOfZero = 0;
+//    int noOfones = 0;
+//    vector<int> out;
+//    solve(0, 4, 0, 0, out, ans);
+//
+//    for(vector<int> i : ans){
+//        for(auto k : i)
+//            cout<<k;
+//        cout<<endl;
+//    }
+//
+////    vector<string> arr = {"bad", "mad", "dad", "dam", "ban", "bat", "add", "sum", "num"};
+////    solve(arr);
+////
+////    O(m2+n);
+    
+    solve_min_no_BS({3,1}, 2);
     
     return 0;
 }
