@@ -22,6 +22,7 @@ void make1row(int i, vector<vector<int> > &matrix) {
 }
 
 void make1col(int j, vector<vector<int> > &matrix) {
+    
     for(int i = 0; i < matrix.size(); i++)
         matrix[i][j] = 1;
 }
