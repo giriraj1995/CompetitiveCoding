@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Minimum Parantheses.xcodeproj">
+      location = "self:Palindrome List.xcodeproj">
    </FileRef>
 </Workspace>
