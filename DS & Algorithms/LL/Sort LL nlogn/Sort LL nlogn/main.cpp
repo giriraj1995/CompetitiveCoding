@@ -39,7 +39,7 @@ ListNode* merge(ListNode* left, ListNode* right) {
         
         ans = ans->next;
     }
-    
+        
     if(left) {
         ans->next = left;
     }
