@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6170D671-8EF9-431E-A01C-0780D3A93772"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4041B172-E13A-48C1-AA8B-C7A6EA28AC2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Combination Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "combinationSum(c, t)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1B792303-8532-4B74-BBDD-F8D9DA482386"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Combination Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "solve(inp, x, i, t, ans)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94F9E6BE-3851-43E9-A0F8-9C8E5DC14A4B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Combination Sum/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "combinationSum(c, t)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "94F9E6BE-3851-43E9-A0F8-9C8E5DC14A4B - c2aa63382dc792c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "combinationSum(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "Combination Sum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giriraj.saigal/Documents/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/DP/Combination%20Sum/Combination%20Sum/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "169">
+               </Location>
+               <Location
+                  uuid = "94F9E6BE-3851-43E9-A0F8-9C8E5DC14A4B - c2aa63382dc792c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "combinationSum(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, int)"
+                  moduleName = "Combination Sum"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/giriraj.saigal/Documents/CompetitiveCoding/DS%20&amp;%20Algorithms/Season%202/DP/Combination%20Sum/Combination%20Sum/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "274">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
