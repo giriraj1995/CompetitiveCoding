@@ -46,6 +46,9 @@ vector<vector<int> > combinationSum(vector<int> A, int B) {
 
 
 int main(int argc, const char * argv[]) {
-    combinationSum({2,3,6,7}, 7);
+    //char st[10+5];
+    vector<char> st(10+65, '0');
+
+    //combinationSum({2,3,6,7}, 7);
     return 0;
 }
