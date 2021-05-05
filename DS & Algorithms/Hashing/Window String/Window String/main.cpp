@@ -16,56 +16,41 @@
 using namespace std;
 
 string minWindow(string A, string B) {
-    string ans = "";
+    int rem = (int)B.size();
     map<char, int> mp;
-    int len = (int)B.size();
     
-    for(char c : B)
-        mp[c]++;
+    int i = 0, j = 0;
     
-    int i = 0;
-    int j = 0;
-    int k = 0;
-    int start = 0;
-    int end = -1;
-    int siz = INT_MAX;
-    
-    while(j < (int)A.size()) {
-        if(mp.find(A[j]) != mp.end() && mp[A[j]] > 0){
-            mp[A[j]]--;
-            k++;
-        }
-        
-        if(len == k) {
-            if((j-i+1) < siz) {
-                siz = j-i+1;
-                start = i;
-                end = j;
-            }
-            
-            bool isF = false;
-            while(i <= j) {
-                
-                if(mp.find(A[i]) != mp.end() && mp[A[i]] >= 0){
-                    if(isF == true)
-                        break;
-                    mp[A[i]]++;
-                    k--;
-                    isF = true;
-                }
-                i++;
-            }
-        }
-        
+    while(j < (int)B.size()) {
+        mp[B[j]]++;
         j++;
     }
     
+    j = 0;
+    int ans = INT_MAX;
+    int st = 0;
     
-    return A.substr(start, end-start+1);
+    while(j < (int)A.size()) {
+        if(--mp[A[j++]] >= 0) {
+            rem--;
+        }
+        
+        while(rem == 0) {
+            if(j-i < ans) {
+                ans = j-i;
+                st = i;
+            }
+            
+            if(++mp[A[i++]] > 0)
+                rem++;
+        }
+    }
+    
+    return ans == INT_MAX ? "" : A.substr(st,ans);
 }
 
 
 int main(int argc, const char * argv[]) {
-    minWindow("ADOBECODEBANC", "ABC");
+    cout<<minWindow("w", "o")<<endl;
     return 0;
 }
