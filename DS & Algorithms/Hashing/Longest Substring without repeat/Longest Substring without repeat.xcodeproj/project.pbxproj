@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D949A592513D1FB00BEB30A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D949A582513D1FB00BEB30A /* main.cpp */; };
+		2D4BB17B2642E47000A4E7A8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D4BB17A2642E47000A4E7A8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2D949A532513D1FB00BEB30A /* CopyFiles */ = {
+		2D4BB1752642E47000A4E7A8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D949A552513D1FB00BEB30A /* Longest Substring without repeat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Longest Substring without repeat"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D949A582513D1FB00BEB30A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2D4BB1772642E47000A4E7A8 /* Longest Substring Without Repeat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Longest Substring Without Repeat"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D4BB17A2642E47000A4E7A8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D949A522513D1FB00BEB30A /* Frameworks */ = {
+		2D4BB1742642E47000A4E7A8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +38,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D949A4C2513D1FB00BEB30A = {
+		2D4BB16E2642E47000A4E7A8 = {
 			isa = PBXGroup;
 			children = (
-				2D949A572513D1FB00BEB30A /* Longest Substring without repeat */,
-				2D949A562513D1FB00BEB30A /* Products */,
+				2D4BB1792642E47000A4E7A8 /* Longest Substring Without Repeat */,
+				2D4BB1782642E47000A4E7A8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2D949A562513D1FB00BEB30A /* Products */ = {
+		2D4BB1782642E47000A4E7A8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D949A552513D1FB00BEB30A /* Longest Substring without repeat */,
+				2D4BB1772642E47000A4E7A8 /* Longest Substring Without Repeat */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D949A572513D1FB00BEB30A /* Longest Substring without repeat */ = {
+		2D4BB1792642E47000A4E7A8 /* Longest Substring Without Repeat */ = {
 			isa = PBXGroup;
 			children = (
-				2D949A582513D1FB00BEB30A /* main.cpp */,
+				2D4BB17A2642E47000A4E7A8 /* main.cpp */,
 			);
-			path = "Longest Substring without repeat";
+			path = "Longest Substring Without Repeat";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D949A542513D1FB00BEB30A /* Longest Substring without repeat */ = {
+		2D4BB1762642E47000A4E7A8 /* Longest Substring Without Repeat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D949A5C2513D1FB00BEB30A /* Build configuration list for PBXNativeTarget "Longest Substring without repeat" */;
+			buildConfigurationList = 2D4BB17E2642E47000A4E7A8 /* Build configuration list for PBXNativeTarget "Longest Substring Without Repeat" */;
 			buildPhases = (
-				2D949A512513D1FB00BEB30A /* Sources */,
-				2D949A522513D1FB00BEB30A /* Frameworks */,
-				2D949A532513D1FB00BEB30A /* CopyFiles */,
+				2D4BB1732642E47000A4E7A8 /* Sources */,
+				2D4BB1742642E47000A4E7A8 /* Frameworks */,
+				2D4BB1752642E47000A4E7A8 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Longest Substring without repeat";
-			productName = "Longest Substring without repeat";
-			productReference = 2D949A552513D1FB00BEB30A /* Longest Substring without repeat */;
+			name = "Longest Substring Without Repeat";
+			productName = "Longest Substring Without Repeat";
+			productReference = 2D4BB1772642E47000A4E7A8 /* Longest Substring Without Repeat */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2D949A4D2513D1FB00BEB30A /* Project object */ = {
+		2D4BB16F2642E47000A4E7A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
-				ORGANIZATIONNAME = "Giriraj Saigal";
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					2D949A542513D1FB00BEB30A = {
-						CreatedOnToolsVersion = 11.1;
+					2D4BB1762642E47000A4E7A8 = {
+						CreatedOnToolsVersion = 12.5;
 					};
 				};
 			};
-			buildConfigurationList = 2D949A502513D1FB00BEB30A /* Build configuration list for PBXProject "Longest Substring without repeat" */;
+			buildConfigurationList = 2D4BB1722642E47000A4E7A8 /* Build configuration list for PBXProject "Longest Substring Without Repeat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +103,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 2D949A4C2513D1FB00BEB30A;
-			productRefGroup = 2D949A562513D1FB00BEB30A /* Products */;
+			mainGroup = 2D4BB16E2642E47000A4E7A8;
+			productRefGroup = 2D4BB1782642E47000A4E7A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D949A542513D1FB00BEB30A /* Longest Substring without repeat */,
+				2D4BB1762642E47000A4E7A8 /* Longest Substring Without Repeat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D949A512513D1FB00BEB30A /* Sources */ = {
+		2D4BB1732642E47000A4E7A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D949A592513D1FB00BEB30A /* main.cpp in Sources */,
+				2D4BB17B2642E47000A4E7A8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2D949A5A2513D1FB00BEB30A /* Debug */ = {
+		2D4BB17C2642E47000A4E7A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -152,6 +151,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -176,7 +176,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -184,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		2D949A5B2513D1FB00BEB30A /* Release */ = {
+		2D4BB17D2642E47000A4E7A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -210,6 +210,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -228,14 +229,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		2D949A5D2513D1FB00BEB30A /* Debug */ = {
+		2D4BB17F2642E47000A4E7A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -243,7 +244,7 @@
 			};
 			name = Debug;
 		};
-		2D949A5E2513D1FB00BEB30A /* Release */ = {
+		2D4BB1802642E47000A4E7A8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -254,25 +255,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D949A502513D1FB00BEB30A /* Build configuration list for PBXProject "Longest Substring without repeat" */ = {
+		2D4BB1722642E47000A4E7A8 /* Build configuration list for PBXProject "Longest Substring Without Repeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D949A5A2513D1FB00BEB30A /* Debug */,
-				2D949A5B2513D1FB00BEB30A /* Release */,
+				2D4BB17C2642E47000A4E7A8 /* Debug */,
+				2D4BB17D2642E47000A4E7A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D949A5C2513D1FB00BEB30A /* Build configuration list for PBXNativeTarget "Longest Substring without repeat" */ = {
+		2D4BB17E2642E47000A4E7A8 /* Build configuration list for PBXNativeTarget "Longest Substring Without Repeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2D949A5D2513D1FB00BEB30A /* Debug */,
-				2D949A5E2513D1FB00BEB30A /* Release */,
+				2D4BB17F2642E47000A4E7A8 /* Debug */,
+				2D4BB1802642E47000A4E7A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2D949A4D2513D1FB00BEB30A /* Project object */;
+	rootObject = 2D4BB16F2642E47000A4E7A8 /* Project object */;
 }

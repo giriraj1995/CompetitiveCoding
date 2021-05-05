@@ -1,53 +1,59 @@
 //
 //  main.cpp
-//  Longest Substring without repeat
+//  Longest Substring Without Repeat
 //
-//  Created by Giriraj Saigal on 17/09/20.
-//  Copyright © 2020 Giriraj Saigal. All rights reserved.
+//  Created by Giriraj Saigal on 05/05/21.
 //
 
 #include <iostream>
+#include <cmath>
 #include <vector>
+#include <map>
 #include <unordered_map>
+#include <stack>
+#include <queue>
+#include <set>
 using namespace std;
 
-int max(int a, int b){
-    return a>b?a:b;
-}
-
 int lengthOfLongestSubstring(string A) {
+    map<char, int> mp;
+    int ans = 0;
+    int i = 0;
+    int j = 0;
+    int len = 0;
+    int st = 0;
     
-    if(A.size() == 0 || A.size() == 1)
-        return A.size();
-    
-    int l = 0;
-    int k = 0;
-    int c = 0;
-
-
-    for(int i = 0; i < A.size(); i++){
-        
-        unordered_map<char, int> u;
-        u[A[i]] = i;
-        c = 1;
-        for(int j = i + 1; j < A.size(); j++){
-            
-            if(u.find(A[j]) != u.end()){
-                
-                i = u[A[j]];
-                break;
-                
+    while(j < (int)A.size()) {
+        if(mp.find(A[j]) != mp.end()) {
+            if(j-i > len) {
+                len = j-i;
+                st = i;
             }
             
-            u[A[j]] = j;
-            c++;
+            while(mp.find(A[j]) != mp.end()) {
+                mp[A[i]]--;
+                
+                if(mp[A[i]] == 0)
+                    mp.erase(A[i]);
+                
+                i++;
+            }
         }
-        l = max(l, c);
+        
+        mp[A[j]]++;
+        j++;
+        
+        if(j-i > len) {
+            len = j-i;
+            st = i;
+        }
     }
-    return l;
+    
+    return len;
 }
 
+
 int main(int argc, const char * argv[]) {
-    cout<<lengthOfLongestSubstring("dasgsk")<<endl;
+    cout<<lengthOfLongestSubstring("abcabcbb")<<endl;
     return 0;
 }
