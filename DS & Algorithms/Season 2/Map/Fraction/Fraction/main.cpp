@@ -37,36 +37,31 @@ string fractionToDecimal(int a, int b) {
     ans += to_string(q) + ".";
     
     long long r = A%B;
-    
-    string afp = "";
-    
-    set<long long> s;
-    while(r<B) {
-        
-        bool first = false;
-        while(r < B) {
-            if(first)
-                afp += "0";
-            r *= 10;
-            
-            first = true;
-        }
-        if(s.find(r) != s.end())
+    bool repeat = false;
+    long long index;
+    map<long long, long long> mp;
+    while(r>0 && repeat == false) {
+        if(mp.find(r) != mp.end())
         {
-            afp = "(" + afp + ")";
+            index = mp[r];
+            repeat = true;
             break;
+        }else{
+            mp[r] = ans.size();
         }
-        s.insert(r);
-        if(r >= B) {
-            q = r/B;
-            r = r%B;
-            afp += to_string(q);
-            if(r == 0)
-                break;
-        }
+        
+        r=r*10;
+        long long t = r/B;
+        ans+=to_string(t);
+        r = r%B;
     }
     
-    return sign ? ans + afp : "-" + ans + afp;
+    if(repeat){
+        ans += ")";
+        ans.insert(index, "(");
+    }
+    
+    return sign ? ans : "-" + ans;
     
     
 }
@@ -74,6 +69,5 @@ string fractionToDecimal(int a, int b) {
 
 
 int main(int argc, const char * argv[]) {
-    cout<<fractionToDecimal(-1,-2147483648);
     return 0;
 }
