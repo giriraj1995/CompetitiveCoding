@@ -56,6 +56,7 @@ vector<int> findSubstring(string A, const vector<string> &B) {
 
 int main(int argc, const char * argv[]) {
     string k= "barfoothefoobarman";
+    
     vector<string> l = {"foo", "bar"};
     findSubstring(k,l);
     return 0;
