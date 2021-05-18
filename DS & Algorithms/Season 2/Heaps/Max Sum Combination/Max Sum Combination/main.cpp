@@ -19,7 +19,7 @@ vector<int> solve(vector<int> &A, vector<int> &B, int C) {
     sort(A.rbegin(), A.rend());
     sort(B.rbegin(), B.rend());
     
-    priority_queue<int, pair<int,int>> q;
+    priority_queue<pair<int, pair<int,int>>> q;
     vector<int> ans;
     
     for(int i = 0; i < A.size(); i++) {
@@ -30,9 +30,12 @@ vector<int> solve(vector<int> &A, vector<int> &B, int C) {
         ans.push_back(q.top().first);
         int x = q.top().second.first;
         int y = q.top().second.second;
+        q.pop();
         
-        q.push({A[x+1]+B[]})
+        q.push({A[x+1]+B[y], {x+1,y}});
     }
+    
+    return ans;
 }
 
 
