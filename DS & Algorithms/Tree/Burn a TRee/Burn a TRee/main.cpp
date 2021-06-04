@@ -25,11 +25,42 @@ using namespace std;
       TreeNode(int x) : val(x), left(NULL), right(NULL) {}
   };
  
+TreeNode* createTree(vector<int> x) {
+    if(x.size() == 0)
+        return NULL;
+
+    TreeNode* root = new TreeNode(x[0]);
+    
+    queue<TreeNode* > q;
+    q.push(root);
+    
+    for(int i = 1; i < x.size(); i = i + 2) {
+        TreeNode* r = q.front();
+        q.pop();
+        int l = x[i];
+        
+        int ri = -1;
+        if(i+1 < x.size())
+            ri = x[i+1];
+        
+        if(l != -1){
+            r->left = new TreeNode(l);
+            q.push(r->left);
+        }
+        
+        if(ri != -1){
+            r->right = new TreeNode(ri);
+            q.push(r->right);
+        }
+    }
+    
+    return root;
+}
 
 queue<pair<TreeNode*,int>> q;
 map<int, vector<int>> ans;
 
-int find(TreeNode* A, int B,int level) {
+int find(TreeNode* A, int B,int &level) {
     if(A == NULL)
         return 0;
         
@@ -121,12 +152,12 @@ int solve(TreeNode* A, int B) {
             q.push({temp->right, level+1});
     }
     
-    return ans.size();
+    return ans.size()-1;
 }
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    TreeNode* g = createTree({1 ,2 ,8 ,-1 ,-1 ,4 ,-1 ,-1 ,-1  });
+    cout<<solve(g,2)<<endl;
     return 0;
 }
