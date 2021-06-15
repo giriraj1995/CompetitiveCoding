@@ -6,6 +6,7 @@
 //
 
 #include <iostream>
+<<<<<<< HEAD
 #include <cmath>
 #include <vector>
 #include <map>
@@ -55,6 +56,8 @@ int numDistinct(string A, string B) {
     return solve(A, B, A.size(), B.size(), dp);
 }
 
+=======
+>>>>>>> d0b21371fce724a10709d6b33c936236fa632e39
 
 int main(int argc, const char * argv[]) {
     // insert code here...
