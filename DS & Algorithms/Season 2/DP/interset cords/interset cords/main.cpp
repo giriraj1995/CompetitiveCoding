@@ -43,6 +43,6 @@ int chordCnt(int A) {
 
 
 int main(int argc, const char * argv[]) {
-    cout << chordCnt(10);
+    cout << chordCnt(10) << endl;
     return 0;
 }
