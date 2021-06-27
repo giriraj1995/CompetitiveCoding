@@ -15,6 +15,38 @@
 #include <set>
 using namespace std;
 
+bool isPalindrome(string s) {
+    string k = "";
+    
+    for(char c : s){
+        if((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))             {
+            k += c;
+            }
+    }
+    
+    int i = 0;
+    int j = k.size()-1;
+    while(i < j){
+        if(k[i] == k[j]){
+            i++;
+            j--;
+            continue;
+        }else if(k[i]+32 == k[j] || k[i]-32 == k[j]) {
+            if(((k[i] >= 65 && k[i] <= 90) || (k[i] >= 97 && k[i] <= 122)) &&
+               ((k[j] >= 65 && k[j] <= 90) || (k[j] >= 97 && k[j] <= 122))){
+                i++;
+                j--;
+                continue;
+            }else{
+                return false;
+            }
+        }else
+               return false;
+    }
+    
+    return true;
+}
+
 int solve(int i, int j, vector<vector<int> > &A, vector<vector<int> > &dp) {
     if(i == A.size()-1 && j == A[0].size()-1)
         return 1;
@@ -53,7 +85,6 @@ int uniquePathsWithObstacles(vector<vector<int> > &A) {
 
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    isPalindrome("0P");
     return 0;
 }
