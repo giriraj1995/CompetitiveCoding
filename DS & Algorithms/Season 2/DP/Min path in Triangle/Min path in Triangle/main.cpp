@@ -31,7 +31,7 @@ int solve(int i, int j, vector<vector<int> > &a, vector<vector<int> >&dp) {
     return dp[i][j] = a[i][j] + min(x,y);
 }
 
-int minimumTotal(vector<vector<int> > &A) {
+int xminimumTotal(vector<vector<int> > &A) {
     int n = A.size();
     vector<vector<int>> dp(n+1, vector<int>(n+1, -1));
     return solve(0,0,A,dp);
