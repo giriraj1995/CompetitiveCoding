@@ -1,5 +1,6 @@
 select top 1 salaray from (select top 2 salary from tablename orderby salary desc);
 
+
 git add fileName
 git reset head fileName
 
