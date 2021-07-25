@@ -16,11 +16,13 @@
 using namespace std;
 
 set<string> mp;
-vector<string> ans;
+set<string> ans;
 
 void solve(string A, int n, string t) {
     if(n == A.size()) {
-        ans.push_back(t);
+        if(t != ""){
+            ans.insert(t.substr(0,t.size()-1));
+        }
         return;
     }
     
@@ -40,15 +42,21 @@ void solve(string A, int n, string t) {
 
 vector<string> wordBreak(string A, vector<string> B) {
     mp.clear();
+    ans.clear();
     for(string k : B){
         mp.insert(k);
     }
     solve(A, 0, "");
-    return ans;
+    vector<string> gg;
+    
+    for(auto j : ans) {
+        gg.push_back(j);
+    }
+    return gg;
 }
 
 
 int main(int argc, const char * argv[]) {
-    wordBreak("catsanddog", {"cat", "cats", "and", "sand", "dog"});
+    wordBreak("baababbbbabbbbbbbbabbbbbabbbb", {"abb", "aab", "b", "a", "ab", "abaabbaa"});
     return 0;
 }
