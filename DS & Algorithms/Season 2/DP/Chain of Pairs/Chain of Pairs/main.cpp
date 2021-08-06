@@ -16,16 +16,16 @@
 using namespace std;
 
 int solve(vector<vector<int> > A) {
-    sort(A.begin(), A.end());
+//    sort(A.begin(), A.end());
     vector<int> x(A.size(), 1);
-    int ans = 1;
+    int ans = 0;
     
     for(int i = 0; i < A.size(); i++) {
         for(int j = 0; j < i; j++) {
             
-            if(A[j][0] > A[i][1] && x[j] < x[i] + 1) {
-                x[j] = x[i]+1;
-                ans = max(x[j], ans);
+            if(A[i][0] > A[j][1] && x[i] < x[j] + 1) {
+                x[i] = x[j]+1;
+                ans = max(x[i], ans);
             }
             
         }
@@ -35,7 +35,7 @@ int solve(vector<vector<int> > A) {
 }
 
 int main(int argc, const char * argv[]) {
-    solve({
+    cout << solve({
         {98, 894},
         {397, 942},
         {70, 519},
@@ -50,6 +50,6 @@ int main(int argc, const char * argv[]) {
         {394, 770},
         {56, 252},
       }
-          );
+                  ) << endl;
     return 0;
 }
