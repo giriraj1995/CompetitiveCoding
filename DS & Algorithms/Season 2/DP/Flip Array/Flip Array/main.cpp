@@ -17,6 +17,7 @@ using namespace std;
 
 int ans;
 int f;
+
 int solve1(const vector<int> &A, int i, int sum, int flips) {
     if(i == A.size()){
         if(abs(sum) < abs(ans)){
