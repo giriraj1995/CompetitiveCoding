@@ -20,10 +20,10 @@ int solve1(int i, int j, vector<vector<int> > &A) {
     if(i == A.size()){
         return 0;
     }
-    
+
     if(dp[i][j] != -1)
         return dp[i][j];
-    
+
     int a = solve1(i+1,(j+1)%3,A);
     int b = solve1(i+1,(j+2)%3,A);
 
