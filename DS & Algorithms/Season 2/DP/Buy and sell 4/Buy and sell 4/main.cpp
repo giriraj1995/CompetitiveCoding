@@ -39,6 +39,28 @@ int buysell(int i, vector<int> A, bool x, int t, int B) {
     }
 }
 
+int bulbs(vector<int> &A) {
+    int res = 0;
+    int n = A.size();
+    int count = 0;
+    
+    for(int i = 0;i < n;i++){
+        if(count==0){
+            if(A[i]==0){
+                res++;
+                count=1;
+            }
+        }
+        else{
+            if(A[i]==1){
+                res++;
+                count=0;
+            }
+        }
+    }
+    return res;
+}
+
 int solve(vector<int> A, int B) {
     dp = vector<vector<vector<int>>>(A.size()+1, vector<vector<int>>(B+1, vector<int>(2, -1)));
     return buysell(0, A, true, 0, B);
