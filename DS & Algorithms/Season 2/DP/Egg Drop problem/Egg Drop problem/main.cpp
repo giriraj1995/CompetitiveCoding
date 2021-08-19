@@ -46,6 +46,6 @@ int solve(int A, int B) {
 }
 
 int main(int argc, const char * argv[]) {
-    cout << solve(2, 10);
+    cout << solve(2, 100);
     return 0;
 }
