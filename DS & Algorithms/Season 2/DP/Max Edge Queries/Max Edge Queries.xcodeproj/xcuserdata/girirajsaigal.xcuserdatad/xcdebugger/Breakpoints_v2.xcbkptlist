@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "findMaxEdge(i, j, x, A, visited)"
+            landmarkName = "findMaxEdge(i, j, x, visited, way, ways)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
