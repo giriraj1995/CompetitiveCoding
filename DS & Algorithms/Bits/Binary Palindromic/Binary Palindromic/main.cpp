@@ -2,6 +2,7 @@
 //  main.cpp
 //  Binary Palindromic
 //
+
 //  Created by Giriraj Saigal on 28/08/20.
 //  Copyright © 2020 Giriraj Saigal. All rights reserved.
 //
