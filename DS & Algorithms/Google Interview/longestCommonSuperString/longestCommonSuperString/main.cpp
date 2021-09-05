@@ -59,20 +59,38 @@ vector<vector<int>> dp;
         return text1.substr(0,n-s);
     }
     string shortestCommonSupersequence(string str1, string str2) {
-        if(str1.size() > str2.size())
-            return shortestCommonSupersequence(str2,str1);
         string x = longestCommonSubsequence(str1,str2);
         
-        int n = str1.size();
-        int m = str2.size();
+        int i = 0;
+        int j = 0;
+        int k = 0;
         
-        string ans1 = x+str2;
-        string ans2 = str2+x;
+        string ans = "";
+        while(k < x.size() && i < str1.size() && j < str2.size()) {
+            while(str1[i] != x[k]){
+                ans += str1[i];
+                i++;
+            }
+            
+            while(str2[j] != x[k]){
+                ans += str2[j];
+                j++;
+            }
+                
+            ans += x[k];
+            
+            i++;
+            j++;
+            k++;
+        }
         
-        if(longestCommonSubsequence(str1,ans1).size() == 0)
-            return ans1;
+        if(i != str1.size())
+        ans += str1.substr(i);
         
-        return ans2;
+        if(j != str2.size())
+        ans += str2.substr(j);
+        
+        return ans;
     }
 
 int main(int argc, const char * argv[]) {
