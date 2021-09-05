@@ -37,7 +37,7 @@ vector<vector<int>> dp;
         int s= dp[text1.size()][text2.size()];
         
         while(i != 0 && j != 0) {
-            if(dp[i-1][j] == dp[i][j-1])
+            if(text1[i-1] == text2[j-1])
             {
                 x+=text1[i-1];
                 i--;
@@ -53,10 +53,7 @@ vector<vector<int>> dp;
         }
         
         reverse(x.begin(), x.end());
-        if(text1.substr(0,s).compare(x) == 0)
-            return text1.substr(s);
-        
-        return text1.substr(0,n-s);
+        return x;
     }
     string shortestCommonSupersequence(string str1, string str2) {
         string x = longestCommonSubsequence(str1,str2);
@@ -94,6 +91,6 @@ vector<vector<int>> dp;
     }
 
 int main(int argc, const char * argv[]) {
-    cout << shortestCommonSupersequence("abac","cab") <<endl;
+    cout << shortestCommonSupersequence("aggtabj","gxtxayb") <<endl;
     return 0;
 }
