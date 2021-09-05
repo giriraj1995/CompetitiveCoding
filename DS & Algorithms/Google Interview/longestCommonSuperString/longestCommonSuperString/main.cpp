@@ -1,4 +1,21 @@
-    vector<vector<int>> dp;
+//
+//  main.cpp
+//  longestCommonSuperString
+//
+//  Created by Giriraj Saigal on 06/09/21.
+//
+
+#include <iostream>
+#include <cmath>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <queue>
+#include <set>
+using namespace std;
+
+vector<vector<int>> dp;
     string longestCommonSubsequence(string text1, string text2) {
         int n = text1.size();
         int m = text2.size();
@@ -7,7 +24,6 @@
         for(int i = 1; i <= n; i++) {
             for(int j = 1; j <= m; j++) {
                 if(text1[i-1] == text2[j-1]){
-                    x += text1[i-1];
                     dp[i][j] = 1+dp[i-1][j-1];
                 }
                 else{
@@ -15,12 +31,32 @@
                 }
             }
         }
+        
+        int i = n;
+        int j = m;
         int s= dp[text1.size()][text2.size()];
         
+        while(i != 0 && j != 0) {
+            if(dp[i-1][j] == dp[i][j-1])
+            {
+                x+=text1[i-1];
+                i--;
+                j--;
+            }else{
+                if(dp[i-1][j] > dp[i][j-1])
+                {
+                    i--;
+                }else{
+                    j--;
+                }
+            }
+        }
+        
+        reverse(x.begin(), x.end());
         if(text1.substr(0,s).compare(x) == 0)
             return text1.substr(s);
         
-        return text1.substr(0,s);
+        return text1.substr(0,n-s);
     }
     string shortestCommonSupersequence(string str1, string str2) {
         if(str1.size() > str2.size())
@@ -38,3 +74,8 @@
         
         return ans2;
     }
+
+int main(int argc, const char * argv[]) {
+    cout << shortestCommonSupersequence("abac","cab") <<endl;
+    return 0;
+}
