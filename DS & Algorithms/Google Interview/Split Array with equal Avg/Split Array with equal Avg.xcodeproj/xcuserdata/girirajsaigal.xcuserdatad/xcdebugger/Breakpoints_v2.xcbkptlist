@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "BAE66DB3-E021-45E6-9342-1E34A72AE3AD"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1205393-D5A8-4C5C-B2F7-10715A9DD3FE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Split Array with equal Avg/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "splitArraySameAverage(nums)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CEB2B163-9931-4BD4-8D40-146E0906E3C4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Split Array with equal Avg/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "is_possible(sum, m, n)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C7C8507-1CEF-44BB-9B64-66ABF345B31D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Split Array with equal Avg/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "splitArraySameAverage(nums)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "2C7C8507-1CEF-44BB-9B64-66ABF345B31D - 2bcddc70a8750eea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "splitArraySameAverage(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;)"
+                  moduleName = "Split Array with equal Avg"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/Split%20Array%20with%20equal%20Avg/Split%20Array%20with%20equal%20Avg/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "249">
+               </Location>
+               <Location
+                  uuid = "2C7C8507-1CEF-44BB-9B64-66ABF345B31D - 2bcddc70a8750eea"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "splitArraySameAverage(std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;)"
+                  moduleName = "Split Array with equal Avg"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/Split%20Array%20with%20equal%20Avg/Split%20Array%20with%20equal%20Avg/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "305">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE1B6040-A058-413E-9550-F5ACC55017EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Split Array with equal Avg/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "splitArraySameAverage(nums)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
