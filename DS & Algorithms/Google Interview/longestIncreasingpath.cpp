@@ -1,5 +1,5 @@
     vector<vector<int>> dp;
-    int solve(int i, int j, vector<int> &matrix) {
+    int solve(int i, int j, vector<vector<int>>& matrix) {
 
         if(dp[i][j] != -1)
             return dp[i][j];
@@ -27,10 +27,10 @@
     }
     
     int longestIncreasingPath(vector<vector<int>>& matrix) {
-        dp = vector<vector<int>>(n+1, vector<int>(m+1, -1));
         int n = matrix.size();
         int m = matrix[0].size();
-        
+                dp = vector<vector<int>>(n+1, vector<int>(m+1, -1));
+
         int temp = INT_MIN;
         for(int i = 0 ; i < n; i++) {
             for(int j = 0; j < m; j++) {
@@ -41,5 +41,5 @@
             }
         }
         
-        return ans;
+        return temp;
     }
