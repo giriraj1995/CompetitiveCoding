@@ -94,53 +94,44 @@ using namespace std;
     }
 
 int calculate1(string s) {
-        int prev = 0;
-        int op = 0;
-        int ans = 0;
+        int sum = 0;
+        int sign = 1;
+        stack<int> st;
+        
         for(int i = 0; i < s.size(); i++) {
-            char c = s[i];
-            
-            if(c == ' ' || c == '(' || c == ')'){
-                continue;
-            }else if(c == '+'){
-                if(op != 0){
-                    if(op == 1){
-                        ans += prev;
-                    }else{
-                        ans -= prev;
-                    }
-                }else{
-                    ans = prev;
+            if(s[i] <= '9' && s[i] >= '0') {
+                int num = 0;
+                
+                while(i < s.size() && s[i] <= '9' && s[i] >= '0') {
+                    num = num*10 + (s[i]-'0');
+                    i++;
                 }
-                op = 1;
-                prev = 0;
-            }else if(c == '-'){
-                if(op != 0){
-                    if(op == 1){
-                        ans += prev;
-                    }else{
-                        ans -= prev;
-                    }
-                }else{
-                    ans = prev;
-                }
-                op = -1;
-                prev = 0;
-            }else{
-                prev = prev*10 + (c-'0');
+                
+                sum += num*sign;
+                i--;
+            }else if(s[i] == '-'){
+                sign = -1;
+            }else if(s[i] == '+'){
+                sign = 1;
+            }else if(s[i] == '('){
+                st.push(sum);
+                st.push(sign);
+                
+                sum = 0;
+                sign = 1;
+            }else if(s[i] == ')'){
+                int sig = st.top();
+                st.pop();
+                
+                sum = sig * sum;
+                int x = st.top();
+                st.pop();
+                
+                sum = sum + x;
             }
         }
-    
-        if(op != 0){
-            if(op == 1){
-                ans += prev;
-            }else{
-                ans -= prev;
-            }
-        }else{
-            ans = prev;
-        }
-        return ans;
+        
+        return sum;
     }
 
 int main(int argc, const char * argv[]) {
