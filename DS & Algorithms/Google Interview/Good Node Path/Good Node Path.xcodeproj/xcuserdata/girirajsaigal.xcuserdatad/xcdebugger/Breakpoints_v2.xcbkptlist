@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
             endingLineNumber = "26"
-            landmarkName = "find(Cs, mask)"
+            landmarkName = "find(cur, mask)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
