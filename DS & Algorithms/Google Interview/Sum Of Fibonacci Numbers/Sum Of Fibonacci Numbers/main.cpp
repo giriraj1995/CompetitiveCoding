@@ -17,7 +17,7 @@ using namespace std;
 vector<int> dp;
 
 int findInd(int x, int i, int j) {
-    int ans = -1;
+    int ans = 0;
     
     while(i <= j) {
         int m = i + (j-i)/2;
@@ -25,9 +25,9 @@ int findInd(int x, int i, int j) {
             return m;
         else{
             if(x < dp[m]){
-                ans = m;
                 j = m-1;
             }else{
+                ans = m;
                 i = m+1;
             }
         }
@@ -40,16 +40,9 @@ int solve(int A, int k) {
     
     if(A == 0 || A == 1)
         return A;
-    
-    int i;
-    for(i = k; i>0; i--) {
-        if(dp[i] <= A) {
-            A -= dp[i];
-            break;
-        }
-    }
-    
-    return 1+solve(A, findInd(A, 0, i));
+        
+    A -= dp[k];
+    return 1+solve(A, findInd(A, 0, k));
 }
 
 int fibsum(int A) {
@@ -69,6 +62,7 @@ int fibsum(int A) {
     
     return solve(A, dp.size()-1);
 }
+
 
 
 int main(int argc, const char * argv[]) {
