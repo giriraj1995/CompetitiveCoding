@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "24085332-0C6E-40C6-99AB-0664E519D936"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7FF4E13-163E-470D-9EE9-339118AA9819"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4AE93909-EBEE-43A0-801F-F1DB4364B971"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84288588-977A-4F75-8AF0-DEF0C93DE3E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "02954EF6-C247-443C-8AAD-617BD85779E9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0296835-CC72-4C10-8DD0-056016FECCD5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "solve(src, parent, dst, mp)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "375F4089-5592-4DFE-A8B0-33E49860C0AD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "solve(src, parent, dst, mp)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "375F4089-5592-4DFE-A8B0-33E49860C0AD - f4b72c98a6874ed0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(int, int, int, std::__1::unordered_map&lt;int, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::hash&lt;int&gt;, std::__1::equal_to&lt;int&gt;, std::__1::allocator&lt;std::__1::pair&lt;int const, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "597">
+               </Location>
+               <Location
+                  uuid = "375F4089-5592-4DFE-A8B0-33E49860C0AD - f4b72c98a6874ed0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "solve(int, int, int, std::__1::unordered_map&lt;int, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::hash&lt;int&gt;, std::__1::equal_to&lt;int&gt;, std::__1::allocator&lt;std::__1::pair&lt;int const, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt; &gt;&amp;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "706">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2059F4A0-A631-415B-A2C8-8F79553C66DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "sumOfDistancesInTree(n, edges)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D86A4D40-2A41-4BC8-BA1E-EEA541C88528"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "sumOfDistancesInTree(n, edges)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21360292-0DD5-471A-9E2D-3BBE10E05D5E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "sumOfDistancesInTree(n, edges)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "21360292-0DD5-471A-9E2D-3BBE10E05D5E - 797ba8c12f5e9714"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sumOfDistancesInTree(int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "143">
+               </Location>
+               <Location
+                  uuid = "21360292-0DD5-471A-9E2D-3BBE10E05D5E - 797ba8c12f5e9714"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "sumOfDistancesInTree(int, std::__1::vector&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;, std::__1::allocator&lt;std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt; &gt; &gt;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "203">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FBBA91EE-66B0-48A0-A9B5-3AD34769F654"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "dfs2(u, seen, closer, ans)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF1D13E0-D0EF-47C6-80DE-E01AE6DD6D33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "dfs1(u, seen, closer, ans)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32E3FB77-E673-48C1-8032-2F834AE591B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "sumOfDistancesInTree(n, edges)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F96962B4-0BDD-45D7-8EA3-698BCD04B40B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "sumOfDistancesInTree(n, edges)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECD7672D-4D68-40F6-8C23-FA3D1F501B1E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "834. Sum of Distances in Tree/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "dfs1(u, seen, closer, ans)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "ECD7672D-4D68-40F6-8C23-FA3D1F501B1E - 9d1594a39a453a77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dfs1(int, std::__1::vector&lt;bool, std::__1::allocator&lt;bool&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "ECD7672D-4D68-40F6-8C23-FA3D1F501B1E - 9d1594a39a453a77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dfs1(int, std::__1::vector&lt;bool, std::__1::allocator&lt;bool&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;, std::__1::vector&lt;int, std::__1::allocator&lt;int&gt; &gt;&amp;)"
+                  moduleName = "834. Sum of Distances in Tree"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/Google%20Interview/834.%20Sum%20of%20Distances%20in%20Tree/834.%20Sum%20of%20Distances%20in%20Tree/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
