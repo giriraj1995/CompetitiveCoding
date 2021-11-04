@@ -57,7 +57,14 @@ int minSteps(string s, string t) {
     }
 
 int main(int argc, const char * argv[]) {
-    minSteps("leetcode",
-             "practice");
+    multiset<int> x;
+    x.insert(1);
+    x.insert(5);
+    x.insert(5);
+    x.insert(10);
+    
+    x.erase(5);
+    
+    //minSteps("leetcode","practice");
     return 0;
 }
