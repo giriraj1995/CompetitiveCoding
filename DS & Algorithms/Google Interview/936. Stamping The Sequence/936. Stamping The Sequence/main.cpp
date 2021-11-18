@@ -15,7 +15,8 @@
 #include <set>
 using namespace std;
 
-vector<int> movesToStamp(string stamp, string target) {
+
+    vector<int> movesToStamp(string stamp, string target) {
         char firstLetter = stamp[0];
         vector<int> inds;
         
@@ -49,20 +50,20 @@ vector<int> movesToStamp(string stamp, string target) {
                 if(curr == target)
                     return vec;
                     
-                for(int i = 0; i < inds.size(); i++) {
-                    if(vec.size() > 0 && inds[i] == vec[vec.size()-1])
+                for(int i = 0; i <= target.size()-stamp.size(); i++) {
+                    if(vec.size() > 0 && i == vec[vec.size()-1])
                         continue;
                     
                     vector<int> f = vec;
-                    f.push_back(inds[i]);
-                    int prev = inds[i];
+                    f.push_back(i);
+                    int prev = i;
                     int sn = stamp.size();
                     int next = target.size() - sn - prev;
                     string t;
                     if(next < 0) {
-                        t = curr.substr(0,inds[i]) +  stamp.substr(0, target.size() - inds[i]);
+                        t = curr.substr(0,i) +  stamp.substr(0, target.size() - i);
                     }else{
-                        t = curr.substr(0,inds[i]) + stamp + curr.substr(inds[i] + stamp.size());
+                        t = curr.substr(0,i) + stamp + curr.substr(i + stamp.size());
                     }
                     q.push({t, f});
                 }
@@ -75,6 +76,6 @@ vector<int> movesToStamp(string stamp, string target) {
     }
 
 int main(int argc, const char * argv[]) {
-    movesToStamp("abca","aabcaca");
+    vector<int> x = movesToStamp("abca","aabcaca");
     return 0;
 }
