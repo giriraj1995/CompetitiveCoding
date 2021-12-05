@@ -2,7 +2,7 @@
 //  main.cpp
 //  House Robber 3
 //
-//  Created by Giriraj Saigal on 28/09/21.
+//  Created by Giriraj Saigal on 05/12/21.
 //
 
 #include <iostream>
@@ -15,9 +15,11 @@
 #include <set>
 using namespace std;
 
+/**
+ * Definition for a binary tree node.
+ */
 
- // Definition for a binary tree node.
-  struct TreeNode {
+struct TreeNode {
       int val;
       TreeNode *left;
       TreeNode *right;
@@ -26,34 +28,45 @@ using namespace std;
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
   };
  
-
-int solve(TreeNode* p, bool take, map<pair<TreeNode*,bool>, int> &dp) {
-        if(p == NULL)
-            return dp[{p,take}] = 0;
+class Solution {
+public:
+    map<pair<TreeNode*, bool>, int> dp;
+    int rob(TreeNode* root, bool canRob) {
+        if(root == NULL)
+            return 0;
         
-        if(dp.find({p,take}) != dp.end())
-            return dp[{p,take}];
+        pair<TreeNode*, bool> key = {root, canRob};
         
-        if(take) {
-            int x = p->val+solve(p->left,false,dp)+solve(p->right,false,dp);
-            int y = solve(p->left,true,dp)+solve(p->right,true,dp);
-            return dp[{p,take}] = max(x,y);
+        if(dp.count(key))
+            return dp[key];
+        
+        if(canRob == true) {
+            int leftF = rob(root->left, false);
+            int rightF = rob(root->right, false);
+            
+            int leftT = rob(root->left, true);
+            int rightT = rob(root->right, true);
+            
+            int x = root->val + leftF + rightF;
+            int y = leftT + rightT;
+            
+            return dp[key] = max(x,y);
         }else{
-            int x = solve(p->left,true,dp)+solve(p->right,true,dp);
-            return dp[{p,take}] = x;
+            int leftT = rob(root->left, true);
+            int rightT = rob(root->right, true);
+            
+            return dp[key] = leftT + rightT;
         }
-        
     }
     
     int rob(TreeNode* root) {
-        map<pair<TreeNode*,bool>, int> dp;
-        return solve(root, true, dp);
+        dp.clear();
+        return rob(root, true);
     }
+};
 
 int main(int argc, const char * argv[]) {
-    vector<int> x;
-    x = {1,2,3,4};
-    vector<int> y;
-    y.push_back;
+    // insert code here...
+    std::cout << "Hello, World!\n";
     return 0;
 }
