@@ -14,8 +14,8 @@
             filePath = "5986. Minimum Cost to Set Cooking Time/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "minCostSetTime(startAt, moveCost, pushCost, targetSeconds)"
             landmarkType = "9">
          </BreakpointContent>
@@ -24,22 +24,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B26002C2-2593-4639-B09F-7F52B1A3C872"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "5986. Minimum Cost to Set Cooking Time/main.cpp"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "solve(targetSeconds)"
-            landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BBCEA2E5-52CE-410F-B3FF-67092E77AAD2"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -55,6 +39,22 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "BBCEA2E5-52CE-410F-B3FF-67092E77AAD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "5986. Minimum Cost to Set Cooking Time/main.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "solve(targetSeconds)"
+            landmarkType = "9">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
             uuid = "273E27FC-34A2-45DE-A49A-555ADF86A230"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -62,8 +62,8 @@
             filePath = "5986. Minimum Cost to Set Cooking Time/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "solve(targetSeconds)"
             landmarkType = "9">
          </BreakpointContent>
@@ -78,10 +78,42 @@
             filePath = "5986. Minimum Cost to Set Cooking Time/main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "minCostSetTime(startAt, moveCost, pushCost, targetSeconds)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "83BE9AE9-9F1E-48E6-9CBF-5C3E1CCDDACC - 546e9e1cbf2a1ed6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "minCostSetTime(int, int, int, int)"
+                  moduleName = "5986. Minimum Cost to Set Cooking Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/DPP/5986.%20Minimum%20Cost%20to%20Set%20Cooking%20Time/5986.%20Minimum%20Cost%20to%20Set%20Cooking%20Time/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "210">
+               </Location>
+               <Location
+                  uuid = "83BE9AE9-9F1E-48E6-9CBF-5C3E1CCDDACC - 546e9e1cbf2a1ed6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "minCostSetTime(int, int, int, int)"
+                  moduleName = "5986. Minimum Cost to Set Cooking Time"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/girirajsaigal/Downloads/CompetitiveCoding/DS%20&amp;%20Algorithms/DPP/5986.%20Minimum%20Cost%20to%20Set%20Cooking%20Time/5986.%20Minimum%20Cost%20to%20Set%20Cooking%20Time/main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "341">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
