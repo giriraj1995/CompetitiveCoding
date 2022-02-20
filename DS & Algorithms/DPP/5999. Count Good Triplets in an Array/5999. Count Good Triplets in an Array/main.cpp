@@ -155,7 +155,76 @@ long long solvec(vector<char> &c1, vector<char> &c2) {
        return cal(n, len);
    }
 
+vector<long long> maximumEvenSplit(long long s) {
+        if(s & 1)
+            return {};
+        typedef long long LL;
+        vector<LL> ret;
+        for(LL i = 2; i <= s; i += 2) {
+            s -= i;
+            ret.push_back(i);
+        }
+        ret.back() += s;
+        return ret;
+    }
+
 int main(int argc, const char * argv[]) {
-    goodTriplets({4,0,1,3,2},{4,1,0,2,3});
+    maximumEvenSplit(28);
     return 0;
 }
+
+//#define ll long long
+//
+//struct segtree {
+//  int N; vector<ll> t;
+//  ll f(ll x, ll y) { return x + y; }
+//
+//  void init(int n) {
+//    N = n;
+//    t.resize(2 * N);
+//  }
+//
+//  void update(int pos, ll val) { // set element, to increment / decrement change from = val to += val
+//    for (t[pos += N] = val; pos /= 2; ) {
+//      t[pos] = f(t[pos * 2], t[pos * 2 + 1]);
+//    }
+//  }
+//
+//  ll query(int l, int r) { // query t[l..r)
+//    ll res = 0;
+//    for (l += N, r += N; l < r; l /= 2, r /= 2) {
+//      if (l & 1) res = f(res, t[l++]);
+//      if (r & 1) res = f(res, t[--r]);
+//    }
+//    return res;
+//  }
+//};
+//
+//class Solution {
+//public:
+//    ll goodTriplets(vector<int>& nums1, vector<int>& nums2) {
+//        int n = (int)nums1.size();
+//        
+//        vector<pair<int, int>> pos(n);
+//        for (int i = 0; i < n; i++) {
+//            pos[nums1[i]].first = i;
+//            pos[nums2[i]].second = i;
+//        }
+//        
+//        sort(pos.begin(), pos.end());
+//
+//        segtree left, right; left.init(n), right.init(n);
+//        vector<long long> dp(n);
+//        for (int i = 0; i < n; i++) {
+//            dp[i] = left.query(0, pos[i].second);
+//            left.update(pos[i].second, 1LL);
+//        }
+//        
+//        long long ans = 0;
+//        for (int i = n - 1; i >= 0; i--) {
+//            ans += dp[i] * right.query(pos[i].second + 1, n);
+//            right.update(pos[i].second, 1LL);
+//        }
+//        return ans;
+//    }
+//};
