@@ -39,20 +39,26 @@ vector<int> findKDistantIndices(vector<int> nums, int key, int k) {
         return ans;
     }
 
-vector<long long> solve(long long n, unordered_map<long long, vector<pair<long long,long long>>> &mp, long long s) {
-        vector<long long> dist(n, INT_MAX);
+class Solution {
+public:
+    vector<long long> solve(long long n, unordered_map<long long, vector<pair<long long,long long>>> &mp, long long s) {
+        vector<long long> dist(n, LONG_MAX);
         dist[s] = 0;
         // min heap
-        priority_queue<pair<int,int>> q;
+        priority_queue<pair<long long,long long>, vector<pair<long long,long long>>, greater<pair<long long,long long>>> q;
         q.push({0,s});
         
         while(q.size() > 0) {
             int u = q.top().second;
+            int x = q.top().first;
             q.pop();
             
+            if(x > dist[u])
+                continue;
+            
             for(auto k : mp[u]) {
-                int v = k.first;
-                int w = k.second;
+                long long v = k.first;
+                long long w = k.second;
                 if(dist[u] + w < dist[v]) {
                     dist[v] = dist[u] + w;
                     q.push({dist[v], v});
@@ -65,25 +71,35 @@ vector<long long> solve(long long n, unordered_map<long long, vector<pair<long l
     
     long long minimumWeight(int n, vector<vector<int>> edges, int src1, int src2, int dest) {
         unordered_map<long long, vector<pair<long long,long long>>> mp;
+        unordered_map<long long, vector<pair<long long,long long>>> mpR;
+        
         for(auto k : edges) {
             mp[k[0]].push_back({k[1], k[2]});
+            mpR[k[1]].push_back({k[0], k[2]});
         }
         
         vector<long long> x1 = solve(n, mp,src1);
         vector<long long> x2 = solve(n, mp,src2);
+        vector<long long> y = solve(n, mpR, dest);
         
-        long long ans1 = x1[dest] + x1[src2];
-        long long ans2 = x2[dest] + x2[src1];
-        long long ans3 = x1[dest] + x2[dest];
-        
-        if(x1[dest] == INT_MAX || x2[dest] == INT_MAX)
+        if(y[src1] == LONG_MAX || y[src2] == LONG_MAX)
             return -1;
         
-        return min({ans1,ans2,ans3});
+        long long ans = LONG_MAX;
+        for(int i = 0; i < n ; i++) {
+            if(x1[i] != LONG_MAX && x2[i] != LONG_MAX && y[i] != LONG_MAX)
+                ans = min(ans,x1[i]+x2[i]+y[i]);
+        }
+        
+        return ans;
     }
+};
 
 int main(int argc, const char * argv[]) {
-    minimumWeight(5,{{0,2,1},{0,3,1},{2,4,1},{3,4,1},{1,2,1},{1,3,10}},
+    
+    
+    Solution s;
+    s.minimumWeight(5,{{0,2,1},{0,3,1},{2,4,1},{3,4,1},{1,2,1},{1,3,10}},
                   0,
                   1,
                   4);
